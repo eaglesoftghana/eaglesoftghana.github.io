@@ -1,0 +1,36 @@
+# .github/workflows/deploy.yml
+name: Deploy Nuxt to GitHub User Page
+
+on:
+  push:
+    branches:
+      - main # The branch you want to trigger the deployment from
+  workflow_dispatch: # Allows manual trigger of the workflow
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20' # Or your preferred Node.js version
+
+      - name: Install dependencies
+        run: npm install # Or yarn install / pnpm install
+
+      - name: Build Nuxt application
+        # NUXT_APP_BASE_URL is not needed here as baseURL is '/' in nuxt.config.ts
+        run: npm run generate
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: main # Important: For User Pages, deploy to 'main' or 'master'
+          keep_files: false # Overwrites existing files

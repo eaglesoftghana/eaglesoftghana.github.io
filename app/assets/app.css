@@ -1,0 +1,56 @@
+@import './css/colors.css';
+@import './css/spacing.css';
+@import './css/reboot.css';
+@import './css/typography.css';
+@import './css/layout.css';
+@import './css/display.css';
+@import './css/flexbox.css';
+@import './css/button.css';
+@import './css/headings.css';
+@import './css/flexbox.css';
+@import './css/input.css';
+@import './css/grid.css';
+
+@font-face {
+	font-family: "Open Sans", sans-serif;
+	src: url("./fonts/OpenSans-Regular.ttf") format("truetype");
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+#__nuxt {
+	height: 100vh;
+}
+@media screen and (max-width: 540px) {
+  body{
+    font-size: var(--font-size-sm);
+  }
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  transform: translateY(0);
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+  transform: translateY(-5px);
+}
+
+.slide-in-enter-active,
+.slide-in-leave-active {
+  transition: opacity 0.3s ease, transform 0.2s ease;
+  transform: translateX(0);
+}
+
+.slide-in-enter-from,
+.slide-in-leave-to {
+  opacity: 0;
+  transform: translateX(5px);
+}
