@@ -7,9 +7,21 @@ on:
       - main # This is where your Nuxt source code lives
   workflow_dispatch: # Allows manual trigger of the workflow
 
+# Add this 'permissions' block at the top level of your workflow
+permissions:
+  contents: write # This grants write access to the repository contents
+  pages: write    # This is also good practice for GitHub Pages deployments
+  id-token: write # Required for OIDC, which GitHub Pages deployments often leverage
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    
+    # You can also set permissions at the job level if you prefer
+    # permissions:
+    #   contents: write
+    #   pages: write
+    #   id-token: write
 
     steps:
       - name: Checkout code
@@ -30,7 +42,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          # --- IMPORTANT CHANGE HERE ---
-          publish_dir: ./.output/public # <--- Point to the correct Nuxt 3 output directory
-          publish_branch: gh-pages # Deploy to the gh-pages branch
-          keep_files: false # Overwrites existing files in gh-pages
+          publish_dir: ./.output/public # Correct Nuxt 3 output directory
+          publish_branch: gh-pages      # Deploy to the gh-pages branch
+          keep_files: false             # Overwrites existing files in gh-pages
