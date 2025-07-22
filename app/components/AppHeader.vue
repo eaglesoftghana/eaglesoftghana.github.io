@@ -62,7 +62,7 @@ watchEffect(() => {
 <template>
   <div class="app-header fixed top-0 left-0 right-0 z-index-100 shadow-md mb-2">
     <header class="layout py-2 d-flex justify-between items-center">
-      <nuxt-link to="/index" class="logo__brand">
+      <nuxt-link to="/" class="logo__brand">
         <img src="/icon-logo.png" alt="Logo" class="logo-image" />
         <span class="logo__brand-text d-none md:d-block">eaglesoft Ghana</span>
       </nuxt-link>
@@ -90,7 +90,25 @@ watchEffect(() => {
                     class="app-header__dropdown-menu absolute top-100 bg-body p-4 rounded shadow-md border">
                     <div class="flex flex-column">
                       <nuxt-link :class="{ 'menu-active': isHashActive('#student-information-system-gh') }"
-                        to="/products#student-information-system-gh" @click="showDropdown = false"
+                        to="/products#online-church-information-system-ghana" @click="showDropdown = false"
+                        class="col-12 py-2 mb-2 flex items-center">
+                        <div class="product-icon">
+                          <!-- <img src="//images/products/sisgh.png" alt="Student Information System Ghana"
+                              class="w-10 h-10 rounded-full"/> -->
+                          <FontAwesomeIcon :icon="faCheck" size="2xl" />
+                        </div>
+                        <div class="link-content">
+                          <h3 class="text-lg font-bold text-capitalize" title="Student Information System Ghana">OCIS
+                            Ghana
+                          </h3>
+                          <p class="text-sm dark:text-muted">
+                            A modern church management system designed to streamline church operations and enhance
+                            community engagement.
+                          </p>
+                        </div>
+                      </nuxt-link>
+                      <nuxt-link :class="{ 'menu-active': isHashActive('#student-information-system-gh') }"
+                        to="/products#student-information-system-ghana" @click="showDropdown = false"
                         class="col-12 py-2 mb-2 flex items-center">
                         <div class="product-icon">
                           <!-- <img src="//images/products/sisgh.png" alt="Student Information System Ghana"

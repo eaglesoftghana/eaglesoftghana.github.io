@@ -6,7 +6,7 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 </script>
 
 <template>
-  <footer class="bg-gray-900 text-gray-300 py-4 sticky top-100">
+  <footer class="bg-primary-dark text-gray-300 py-4 sticky top-100">
     <div class="layout">
       <div class="row">
         <div class="col-12 lg:col-4 md:col-6 gy-3 lg:gy-0">
@@ -69,10 +69,10 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
             </div>
             <div class="flex items-center my-2" style="max-width: 90%;">
               <div class="text-input-control">
-                <input type="email" name="email" id="email" class="text-input" />
+                <input type="email" name="email" placeholder="Enter email" id="email" class="text-input" style="outline-color: var(--color-muted);" />
               </div>
               <div class="ml-2">
-                <button type="submit" class="button primary dark:bg-gray-8=00 dark:text-white">
+                <button type="submit" class="button primary">
                   Subscribe
                 </button>
               </div>
