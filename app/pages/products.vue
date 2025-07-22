@@ -10,7 +10,7 @@ useHead({
 
 <template>
   <div>
-    <hero/>
+    <hero name="software products"/>
 
     products
   </div>

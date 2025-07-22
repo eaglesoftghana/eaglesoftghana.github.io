@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 	},
 	compatibilityDate: "2025-07-15",
 	devtools: { enabled: true },
-	ssr: true,
+	ssr: false,
 	css: ["~/assets/app.css"],
 	app: {
     baseURL: '/',
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
 				},
 				{
 					rel: "apple-touch-icon",
-					href: "/apple-touch-icon.png",
+					href: "/icon.png",
 				},
 				{
 					rel: "manifest",

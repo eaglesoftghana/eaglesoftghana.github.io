@@ -3,7 +3,7 @@
 
 <template>
   <div>
-    <hero/>
+    <hero name="about us"/>
     about
   </div>
 </template>

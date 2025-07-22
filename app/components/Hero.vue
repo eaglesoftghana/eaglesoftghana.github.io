@@ -2,7 +2,10 @@
 import img from '~/assets/image/web-bg.webp';
 
 const props = defineProps({
-
+  name: {
+    type: String,
+    default: 'Eaglesoft GH'
+  },
 });
 </script>
 
@@ -11,10 +14,7 @@ const props = defineProps({
     <div class="header-overlay h-100">
       <div class="layout d-flex justify-center items-center h-100">
         <div class="home__hero__content text-center">
-          <h1 class="lg:text-2xl text-lg font-bold text-white mb-4">Eaglesoft GH
-            >
-            software products
-          </h1>
+          <h1 class="lg:text-2xl text-lg font-bold text-white mb-4">Eaglesoft Ghana - {{ props.name }} </h1>
           <p class="lg:text-lg text-white mb-6">
             Explore our vast software nicely crafted just for you.</p>
           <!-- <nuxt-link to="/services" role="button" class="button primary">Explore Services</nuxt-link> -->

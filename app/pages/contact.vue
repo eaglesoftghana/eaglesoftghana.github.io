@@ -2,6 +2,7 @@
 </script>
 
 <template>
+  <Hero name="contact us"/>
 contact
 </template>
 

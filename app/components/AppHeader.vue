@@ -62,7 +62,7 @@ watchEffect(() => {
 <template>
   <div class="app-header fixed top-0 left-0 right-0 z-index-100 shadow-md mb-2">
     <header class="layout py-2 d-flex justify-between items-center">
-      <nuxt-link to="/" class="logo__brand">
+      <nuxt-link to="/index" class="logo__brand">
         <img src="/icon-logo.png" alt="Logo" class="logo-image" />
         <span class="logo__brand-text d-none md:d-block">eaglesoft Ghana</span>
       </nuxt-link>

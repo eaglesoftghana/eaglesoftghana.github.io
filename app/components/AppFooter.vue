@@ -12,19 +12,19 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
         <div class="col-12 lg:col-4 md:col-6 gy-3 lg:gy-0">
           <h6 class="text-capitalize font-bold mb-1">what's new</h6>
           <div class="flex flex-column">
-            <nuxt-link class="mb-2">
+            <nuxt-link to="/products" class="mb-2">
               OCIS Ghana
             </nuxt-link>
-            <nuxt-link class="mb-2">
+            <nuxt-link to="/products" class="mb-2">
               SIS Ghana
             </nuxt-link>
-            <nuxt-link class="mb-2">
+            <nuxt-link to="/products" class="mb-2">
               Vote 360 online
             </nuxt-link>
-            <nuxt-link class="mb-2">
+            <nuxt-link to="/products" class="mb-2">
               clinic plus
             </nuxt-link>
-            <nuxt-link class="mb-2">
+            <nuxt-link to="/products" class="mb-2">
               pharma plus
             </nuxt-link>
           </div>
@@ -85,8 +85,8 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
           &copy; {{ new Date().getFullYear() }} Eaglesoft Ghana. All rights reserved.
         </p>
         <p class="text-xs">
-          <nuxt-link to="/privacy-policy" class="text-gray-400 hover:text-white">Privacy Policy</nuxt-link> |
-          <nuxt-link to="/terms-of-service" class="text-gray-400 hover:text-white">Terms of Service</nuxt-link>
+          <nuxt-link to="/" class="text-gray-400 hover:text-white">Privacy Policy</nuxt-link> |
+          <nuxt-link to="/" class="text-gray-400 hover:text-white">Terms of Service</nuxt-link>
         </p>
       </div>
     </div>

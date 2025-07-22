@@ -17,7 +17,7 @@ import img from '~/assets/image/web-bg.webp';
             <div class="home__hero__content text-center" v-show="index === 1">
               <h1 class="font-bold mb-4 text-success">Innovative Solutions</h1>
               <p class="text-lg text-white mb-6">Crafting software that empowers your business.</p>
-              <nuxt-link to="/services" role="button" class="button success">Learn More</nuxt-link>
+              <nuxt-link to="/products" role="button" class="button success">Learn More</nuxt-link>
             </div>
             <div class="home__hero__content text-center" v-show="index === 2">
               <h1 class="font-bold mb-4 text-success">Join Us Today</h1>
