@@ -13,12 +13,7 @@ export const truncateText = (text, length = 15) => {
  * Generate initials from a name.
  * @param {string} name - The name from which to generate initials.
  * @return {string} - The initials derived from the name.
- * 
- * If the name is empty, returns an empty string.
- * 
- * If the name consists of a single word, returns the first letter capitalized.
- * 
- * If the name consists of multiple words, returns the first letter of each word capitalized.
+
  * 
  * Example: "John Doe" -> "JD", "Alice" -> "A"
  * * @example 

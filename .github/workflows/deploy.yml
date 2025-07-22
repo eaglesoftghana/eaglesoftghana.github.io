@@ -4,7 +4,7 @@ name: Deploy Nuxt to GitHub User Page
 on:
   push:
     branches:
-      - main # The branch you want to trigger the deployment from
+      - main # This is where your Nuxt source code lives
   workflow_dispatch: # Allows manual trigger of the workflow
 
 jobs:
@@ -23,14 +23,14 @@ jobs:
       - name: Install dependencies
         run: npm install # Or yarn install / pnpm install
 
-      - name: Build Nuxt application
-        # NUXT_APP_BASE_URL is not needed here as baseURL is '/' in nuxt.config.ts
-        run: npm run generate
+      - name: Build Nuxt application (generate static files)
+        run: npm run generate # This will produce output in .output/public
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./.output/public
-          publish_branch: main # Important: For User Pages, deploy to 'main' or 'master'
-          keep_files: false # Overwrites existing files
+          # --- IMPORTANT CHANGE HERE ---
+          publish_dir: ./.output/public # <--- Point to the correct Nuxt 3 output directory
+          publish_branch: gh-pages # Deploy to the gh-pages branch
+          keep_files: false # Overwrites existing files in gh-pages
