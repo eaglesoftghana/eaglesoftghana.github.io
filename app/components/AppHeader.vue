@@ -56,7 +56,7 @@ watch(() => isMobileMenuActive.value, () => {
 });
 watchEffect(() => {
   hash.value = window.location.hash;
-})
+}, { flush: 'sync' })
 </script>
 
 <template>
@@ -201,11 +201,11 @@ watchEffect(() => {
   </div>
   <Transition name="slide-in" mode="out-in">
     <div @click="hideMenu" v-if="isMobileMenuActive"
-      class="backdrop fixed right-0 left-0 bottom-0 top-0 z-index-110 vh-100 w-100 lg:d-none">
+      class="backdrop fixed right-0 left-0 bottom-0 top-0 z-index-110 h-100 w-100 lg:d-none">
       <div class="mobile-menu bg-bod h-100 relative p-4 overflow-y-auto">
         <div class="flex justify-between">
           <img src="/icon-logo.png" alt="" class="logo-image" />
-          <button type="button" title="Close Menu | Exit" class="button px-3 py-1 bg-gray-900"
+          <button type="button" title="Close Menu | Exit" class="button px-3 py-1 bg-gray-800"
             @click="isMobileMenuActive = false">
             <FontAwesomeIcon :icon="faX" class="text-success" size="lg" />
           </button>
@@ -232,7 +232,7 @@ watchEffect(() => {
                 <FontAwesomeIcon :icon="faCircleDot" fixed-width class="mr-2" size="xs" />
                 Products / Softwares
               </nuxt-link>
-              <button class="button py-1 no-outline mb-2 bg-gray-900"
+              <button class="button py-1 no-outline mb-2 bg-gray-800"
                 @click="showMobileMenuDropdown = !showMobileMenuDropdown">
                 <FontAwesomeIcon :icon="faChevronRight"
                   :class="{ 'rotate-90': showMobileMenuDropdown || mobileMenuLinkActive() }" />
@@ -261,7 +261,7 @@ watchEffect(() => {
                   </nuxt-link>
                   <nuxt-link :class="{ 'mobile-menu-active': isHashActive('#vote-360-online') }"
                     to="/products#vote-360-online" @click="showDropdown = false"
-                    class="col-12 mb-2 flex items-center mobile-menu-link border-top border-gray-900 pt-2">
+                    class="col-12 mb-2 flex items-center mobile-menu-link border-top border-gray-700 pt-2">
                     <div class="pr-4">
                       <!-- <img src="//images/products/sisgh.png" alt="Student Information System Ghana"
                               class="w-10 h-10 rounded-full"/> -->
@@ -279,7 +279,7 @@ watchEffect(() => {
                   </nuxt-link>
                   <nuxt-link :class="{ 'mobile-menu-active': isHashActive('#clinic-plus') }" to="/products#clinic-plus"
                     @click="showDropdown = false"
-                    class="col-12 mb-2 flex items-center mobile-menu-link border-top border-gray-900 pt-2">
+                    class="col-12 mb-2 flex items-center mobile-menu-link border-top border-gray-700 pt-2">
                     <div class="pr-4">
                       <!-- <img src="//images/products/sisgh.png" alt="Student Information System Ghana"
                               class="w-10 h-10 rounded-full"/> -->
@@ -297,7 +297,7 @@ watchEffect(() => {
                   <nuxt-link active-class=" " exact-active-class=" "
                     :class="{ 'mobile-menu-active': isHashActive('#pharma-plus') }" to="/products#pharma-plus"
                     @click="showDropdown = false"
-                    class="col-12 mb-2 flex items-center mobile-menu-link border-top border-gray-900 pt-2">
+                    class="col-12 mb-2 flex items-center mobile-menu-link border-top border-gray-700 pt-2">
                     <div class="pr-4">
                       <!-- <img src="//images/products/sisgh.png" alt="Student Information System Ghana"
                               class="w-10 h-10 rounded-full"/> -->
@@ -345,10 +345,10 @@ watchEffect(() => {
 <style>
 .mobile-menu {
   width: 100%;
-  max-width: 375px;
+  max-width: 325px;
   -webkit-backdrop-filter: blur(225px);
   backdrop-filter: blur(225px);
-  background-color: rgba(33, 37, 41, 0.55);
+  background-color: rgba(33, 37, 41, 0.25);
 
   & * {
     color: var(--color-light) !important;

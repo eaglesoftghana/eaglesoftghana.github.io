@@ -45,6 +45,18 @@ import img from '~/assets/image/web-bg.webp';
   .home__hero__wrapper {
     height: 60vh;
   }
+
+  .header-overlay {
+    -webkit-backdrop-filter: blur(2px) !important;
+    backdrop-filter: blur(2px) !important;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .header-overlay {
+    -webkit-backdrop-filter: blur(2px) !important;
+    backdrop-filter: blur(2px) !important;
+  }
 }
 
 .header-overlay {

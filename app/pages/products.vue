@@ -14,7 +14,7 @@ useHead({
     <div class="layout">
       <div class="what__we__do">
         <h5 class="text-center lg:text-2xl font-bold mb-4 text-capitalize">
-          our well-crafted software products (SaaS)
+          our software products
         </h5>
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           <div class="service-card" id="online-church-information-system-ghana">

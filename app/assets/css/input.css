@@ -17,7 +17,9 @@
 	text-transform: capitalize;
 	font-size: inherit;
 }
-input.text-input:not([type="file"]):not([type="image"]):not([type="checkbox"]):not([type="radio"]),
+input.text-input:not([type="file"]):not([type="image"]):not(
+		[type="checkbox"]
+	):not([type="radio"]),
 select,
 textarea {
 	display: inline-block;
@@ -48,6 +50,9 @@ textarea {
 	&.lg {
 		padding: var(--spacing-4) var(--spacing-2);
 		font-size: var(--font-size-lg);
+	}
+	&::placeholder {
+		color: inherit !important;
 	}
 }
 
