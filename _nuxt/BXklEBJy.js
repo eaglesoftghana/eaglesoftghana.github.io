@@ -1,1 +1,0 @@
-import{_ as t}from"./5Drhv1iR.js";import{_ as r,c as a,b as n,d as s,o as c}from"./Dy6J4nK7.js";import"./CPjKFLNP.js";const _={};function m(f,o){const e=t;return c(),a("div",null,[n(e,{name:"about us"}),o[0]||(o[0]=s(" about "))])}const p=r(_,[["render",m]]);export{p as default};
