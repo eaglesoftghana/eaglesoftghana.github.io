@@ -1,1 +1,0 @@
-import{_ as o}from"./DR8EhbD5.js";import{_ as c,c as n,b as a,d as r,F as s,o as _}from"./fFMukBST.js";import"./CCVUiZrU.js";const m={};function f(p,t){const e=o;return _(),n(s,null,[a(e,{name:"contact us"}),t[0]||(t[0]=r(" contact "))],64)}const u=c(m,[["render",f]]);export{u as default};
