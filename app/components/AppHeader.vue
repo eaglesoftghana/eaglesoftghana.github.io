@@ -63,7 +63,7 @@ watchEffect(() => {
   <div class="app-header fixed top-0 left-0 right-0 z-index-100 shadow-md mb-2">
     <header class="layout py-2 d-flex justify-between items-center">
       <nuxt-link to="/" class="logo__brand">
-        <img src="/icon-logo.png" alt="Logo" class="logo-image" />
+        <img src="/eaglesoft.webp" alt="Logo" class="logo-image" />
         <span class="logo__brand-text d-none md:d-block">eaglesoft Ghana</span>
       </nuxt-link>
       <h1 class="mb-0 flex items-center">
@@ -204,7 +204,7 @@ watchEffect(() => {
       class="backdrop fixed right-0 left-0 bottom-0 top-0 z-index-110 h-100 w-100 lg:d-none">
       <div class="mobile-menu bg-bod h-100 relative p-4 overflow-y-auto">
         <div class="flex justify-between">
-          <img src="/icon-logo.png" alt="" class="logo-image" />
+          <img src="/eaglesoft.webp" alt="" class="logo-image" />
           <button type="button" title="Close Menu | Exit" class="button px-3 py-1 bg-gray-800"
             @click="isMobileMenuActive = false">
             <FontAwesomeIcon :icon="faX" class="text-success" size="lg" />
@@ -436,9 +436,9 @@ a.active {
 }
 
 .logo-image {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 5%;
 }
 
 
