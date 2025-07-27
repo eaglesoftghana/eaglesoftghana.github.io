@@ -1,7 +1,9 @@
 <script setup>
-import { faCircleDot } from '@fortawesome/free-regular-svg-icons';
+// import { faChevronRight } from '@fortawesome/free-regular-svg-icons';
 import { faBarsStaggered, faChevronDown, faChevronLeft, faChevronRight, faX } from '@fortawesome/free-solid-svg-icons';
 import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
+import { faMinus } from '@fortawesome/free-solid-svg-icons/faMinus';
+import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 const showDropdown = ref(false);
@@ -214,14 +216,14 @@ watchEffect(() => {
           <li>
             <nuxt-link to="/" class="flex items-center mb-2 mobile-menu-link" exact-active-class="mobile-menu-active"
               active-class="mobile-menu-active">
-              <FontAwesomeIcon :icon="faCircleDot" fixed-width class="mr-2" size="xs" />
+              <FontAwesomeIcon :icon="faChevronRight" fixed-width class="mr-2" size="xs" />
               Home
             </nuxt-link>
           </li>
           <li>
             <nuxt-link to="/services" class="flex items-center mb-2 mobile-menu-link"
               exact-active-class="mobile-menu-active" active-class="mobile-menu-active">
-              <FontAwesomeIcon :icon="faCircleDot" fixed-width class="mr-2" size="xs" />
+              <FontAwesomeIcon :icon="faChevronRight" fixed-width class="mr-2" size="xs" />
               Services
             </nuxt-link>
           </li>
@@ -229,13 +231,12 @@ watchEffect(() => {
             <div class="flex items-center justify-between">
               <nuxt-link to="/products" class="flex items-center mb-2 mobile-menu-link w-100"
                 exact-active-class="mobile-menu-active" active-class="mobile-menu-active">
-                <FontAwesomeIcon :icon="faCircleDot" fixed-width class="mr-2" size="xs" />
+                <FontAwesomeIcon :icon="faChevronRight" fixed-width class="mr-2" size="xs" />
                 Products / Softwares
               </nuxt-link>
-              <button class="button py-1 no-outline mb-2 bg-gray-800"
+              <button class="button py-1 no-outline mb-2 bg-gray-900"
                 @click="showMobileMenuDropdown = !showMobileMenuDropdown">
-                <FontAwesomeIcon :icon="faChevronRight"
-                  :class="{ 'rotate-90': showMobileMenuDropdown || mobileMenuLinkActive() }" />
+                <FontAwesomeIcon :icon="showMobileMenuDropdown || mobileMenuLinkActive() ? faMinus : faPlus" size="lg" />
               </button>
             </div>
             <Transition name="fade" mode="out-in">
@@ -320,14 +321,14 @@ watchEffect(() => {
           <li>
             <nuxt-link to="/about" class="flex items-center mb-2 mobile-menu-link"
               exact-active-class="mobile-menu-active" active-class="mobile-menu-active">
-              <FontAwesomeIcon :icon="faCircleDot" fixed-width class="mr-2" size="xs" />
+              <FontAwesomeIcon :icon="faChevronRight" fixed-width class="mr-2" size="xs" />
               About
             </nuxt-link>
           </li>
           <li>
             <nuxt-link to="/contact" class="flex items-center mb-2 mobile-menu-link"
               exact-active-class="mobile-menu-active" active-class="mobile-menu-active">
-              <FontAwesomeIcon :icon="faCircleDot" fixed-width class="mr-2" size="xs" />
+              <FontAwesomeIcon :icon="faChevronRight" fixed-width class="mr-2" size="xs" />
               Contact
             </nuxt-link>
           </li>
@@ -370,9 +371,9 @@ watchEffect(() => {
 }
 
 .backdrop {
-  background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(2px);
-  backdrop-filter: blur(2px);
+  background-color: rgba(0, 0, 0, 0.45);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
   transition: all 0.3s ease;
   display: flex;
   justify-content: end;
