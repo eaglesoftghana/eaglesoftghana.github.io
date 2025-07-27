@@ -2,7 +2,7 @@
 useHead({
   title: 'Products . eaglesoft ghana'.toUpperCase(),
   meta: [
-    { name: 'description', content: 'Explore our products at Eaglesoft GH.' },
+    { name: 'description', content: 'Explore our products at Eaglesoft Ghana.' },
     { name: 'keywords', content: 'Eaglesoft, products, software, Ghana' }
   ]
 })

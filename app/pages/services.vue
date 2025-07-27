@@ -1,4 +1,11 @@
 <script setup>
+useHead({
+  title: 'services . eaglesoft ghana'.toUpperCase(),
+  meta: [
+    { name: 'description', content: 'Explore our services at Eaglesoft Ghana.' },
+    { name: 'keywords', content: 'Eaglesoft, services, software, Ghana' }
+  ]
+})
 </script>
 
 <template>
