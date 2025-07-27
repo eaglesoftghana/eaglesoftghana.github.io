@@ -188,7 +188,7 @@
 	color: var(--color-light);
 
 	&:hover {
-		background-color: var(--color-dark-text);
+		background-color: var(--color-gray-900);
 	}
 	&:focus-within,
 	&:focus {
