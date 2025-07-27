@@ -280,6 +280,10 @@ video {
 .border-gray-900 {
 	border-color: var(--color-gray-900) !important;
 }
+.rounded-circle,
+.rounded-full{
+  border-radius: 100% !important;
+}
 .rounded {
 	border-radius: var(--spacing-1);
 }
