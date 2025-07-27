@@ -47,15 +47,15 @@ import img from '~/assets/image/web-bg.webp';
   }
 
   .header-overlay {
-    -webkit-backdrop-filter: blur(2px) !important;
-    backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(2.5px) !important;
+    backdrop-filter: blur(2.5px) !important;
   }
 }
 
 @media screen and (max-width: 426px) {
   .header-overlay {
-    -webkit-backdrop-filter: blur(2px) !important;
-    backdrop-filter: blur(2px) !important;
+    -webkit-backdrop-filter: blur(1.5px) !important;
+    backdrop-filter: blur(1.5px) !important;
   }
 }
 
@@ -66,7 +66,7 @@ import img from '~/assets/image/web-bg.webp';
   right: 0;
   bottom: 0;
   background-color: rgba(0, 0, 0, 0.5);
-  -webkit-backdrop-filter: blur(5px);
-  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
 }
 </style>
