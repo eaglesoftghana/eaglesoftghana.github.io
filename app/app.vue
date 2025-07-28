@@ -6,6 +6,7 @@
   <!-- <div> -->
   <app-header />
   <NuxtPage />
+  <to-top/>
   <app-footer />
   <!-- </div> -->
 </template>

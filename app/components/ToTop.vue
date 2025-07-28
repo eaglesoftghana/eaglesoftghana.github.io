@@ -31,7 +31,7 @@ onUnmounted(() => {
 <template>
   <Transition name="dropdown-fade" mode="out-in">
     <div v-if="showToTop" @click="handleClick"
-      class="fixed to-top bg-primary-light shadow-lg px-4 py-3 rounded text-white cursor-pointer z-index-40" title="To Top">
+      class="fixed to-top bg-primary shadow-lg px-4 py-3 rounded text-white cursor-pointer z-index-40" title="To Top">
       <FontAwesomeIcon :icon="faChevronUp" />
     </div>
   </Transition>
