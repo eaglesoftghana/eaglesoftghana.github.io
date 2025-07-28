@@ -1,5 +1,7 @@
 <script setup>
 import { faEnvelope, faPaperPlane } from '@fortawesome/free-regular-svg-icons';
+import { faFacebookF, faWhatsapp, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
@@ -22,7 +24,7 @@ const handleGetIntouchForm = () => {
 </script>
 
 <template>
-  <footer class="bg-success text-gray-300 py-4 sticky top-100">
+  <footer class="bg-primary text-gray-300 py-4 sticky top-100">
     <div class="layout">
       <div class="row">
         <div class="col-12 lg:col-4 md:col-6 gy-3 lg:gy-0 order-2">
@@ -88,7 +90,7 @@ const handleGetIntouchForm = () => {
               </div>
             </div>
             <div class="flex items-center my-2" style="max-width: 375px;">
-              <form class="flex items-center w-100 input-wrapper rounded-2">
+              <form @submit.prevent="handleGetIntouchForm" class="flex items-center w-100 input-wrapper rounded-2">
                 <button type="submit" :disabled="isGetInTouchButtonDisabled"
                   class="button outline border-white px-2 py-2 absolute mr-1 dark rounded-full">
                   <FontAwesomeIcon :icon="faPaperPlane" style="flex-shrink: 0;" size="lg" />
@@ -99,6 +101,26 @@ const handleGetIntouchForm = () => {
               </form>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="text-center md:text-left">
+        <h4 class="text-sm text-uppercase text-light mb-1">
+          follow
+        </h4>
+        <div class="flex align-center social-links justify-center md:justify-start">
+          <NuxtLink to="//facebook.com/eaglesoftghana" external target="_blank">
+            <FontAwesomeIcon :icon="faFacebookF" />
+          </NuxtLink>
+          <NuxtLink to="//api.whatsapp.com/send/?phone=%2B233543093942&text&type=phone_number&app_absent=0" external
+            target="_blank">
+            <FontAwesomeIcon :icon="faWhatsapp" size="lg" />
+          </NuxtLink>
+          <NuxtLink to="//x.com/quajoking_0" external target="_blank">
+            <FontAwesomeIcon :icon="faXTwitter" />
+          </NuxtLink>
+          <NuxtLink to="//youtube.com/@quajoking" external target="_blank">
+            <FontAwesomeIcon :icon="faYoutube" />
+          </NuxtLink>
         </div>
       </div>
       <div class="my-3 flex flex-wrap justify-center lg:justify-between items-center text-white">
@@ -121,5 +143,47 @@ const handleGetIntouchForm = () => {
 
 a.hover\:text-link:hover {
   color: var(--color-info-alt);
+}
+
+.social-links a {
+  margin-right: var(--spacing-3);
+  margin-left: var(--spacing-0);
+  border-radius: 15%;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+  text-decoration: none;
+  background-color: var(--color-light) !important;
+  user-select: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.social-links a:nth-child(1) {
+  background-color: inherit;
+  color: rgb(0, 66, 207);
+}
+
+.social-links a:nth-child(2) {
+  background-color: inherit;
+  color: rgb(0, 194, 97);
+
+}
+
+.social-links a:nth-child(3) {
+  background-color: inherit;
+  color: black;
+
+}
+
+.social-links a:nth-child(4) {
+  background-color: inherit;
+  color: rgb(255, 23, 23);
+
 }
 </style>
