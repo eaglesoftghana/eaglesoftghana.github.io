@@ -206,7 +206,11 @@ watchEffect(() => {
       class="backdrop fixed right-0 left-0 bottom-0 top-0 z-index-110 h-100 w-100 lg:d-none">
       <div class="mobile-menu bg-bod h-100 relative p-4 overflow-y-auto">
         <div class="flex justify-between">
-          <img src="/eaglesoft.webp" alt="" class="logo-image" />
+          <nuxt-link to="/" class="logo__brand">
+            <img src="/eaglesoft.webp" alt="Logo" class="logo-image" />
+            <span class="logo__brand-text text-lg">eaglesoft Ghana</span>
+          </nuxt-link>
+          <!-- <img src="/eaglesoft.webp" alt="" class="logo-image" /> -->
           <button type="button" title="Close Menu | Exit" class="button px-3 py-1 bg-gray-800"
             @click="isMobileMenuActive = false">
             <FontAwesomeIcon :icon="faX" class="text-success" size="lg" />
@@ -234,9 +238,9 @@ watchEffect(() => {
                 <FontAwesomeIcon :icon="faChevronRight" fixed-width class="mr-2" size="xs" />
                 Products / Softwares
               </nuxt-link>
-              <button class="button py-1 no-outline mb-2 bg-gray-900"
-                @click="showMobileMenuDropdown = !showMobileMenuDropdown">
-                <FontAwesomeIcon :icon="showMobileMenuDropdown || mobileMenuLinkActive() ? faMinus : faPlus" size="lg" />
+              <button class="button py-1 no-outline mb-2" @click="showMobileMenuDropdown = !showMobileMenuDropdown">
+                <FontAwesomeIcon :icon="showMobileMenuDropdown || mobileMenuLinkActive() ? faMinus : faPlus"
+                  size="lg" />
               </button>
             </div>
             <Transition name="fade" mode="out-in">
@@ -346,9 +350,9 @@ watchEffect(() => {
 <style>
 .mobile-menu {
   width: 100%;
-  max-width: 325px;
-  -webkit-backdrop-filter: blur(225px);
-  backdrop-filter: blur(225px);
+  max-width: 425px;
+  -webkit-backdrop-filter: blur(25px);
+  backdrop-filter: blur(25px);
   background-color: rgba(33, 37, 41, 0.25);
 
   & * {
@@ -371,9 +375,9 @@ watchEffect(() => {
 }
 
 .backdrop {
-  background-color: rgba(0, 0, 0, 0.45);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
+  background-color: rgba(0, 0, 0, 0.25);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
   transition: all 0.3s ease;
   display: flex;
   justify-content: end;
