@@ -4,7 +4,7 @@
 <template>
   <div>
     <home-hero />
-    <div class="layout">
+    <div class="layout" style="max-width: 992px;">
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum dicta totam amet eum aliquid id vero omnis ab
       eveniet? Vero debitis numquam repellendus earum expedita totam voluptas odit necessitatibus nobis.
       <div class="what__we__do">

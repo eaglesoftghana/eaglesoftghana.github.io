@@ -1,10 +1,7 @@
 <script setup>
-// import { faChevronRight } from '@fortawesome/free-regular-svg-icons';
-import { faBarsStaggered, faChevronDown, faChevronLeft, faChevronRight, faX } from '@fortawesome/free-solid-svg-icons';
-import { faCheck } from '@fortawesome/free-solid-svg-icons/faCheck';
-import { faMinus } from '@fortawesome/free-solid-svg-icons/faMinus';
-import { faPlus } from '@fortawesome/free-solid-svg-icons/faPlus';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { AlignRightIcon, ChevronDownIcon, ChevronRight, XIcon } from 'lucide-vue-next';
+
+
 
 const showDropdown = ref(false);
 
@@ -63,7 +60,7 @@ watchEffect(() => {
 
 <template>
   <div class="app-header fixed top-0 left-0 right-0 z-index-100 shadow-md mb-2">
-    <header class="layout py-2 d-flex justify-between items-center">
+    <header class="layout py-2 d-flex justify-between items-center" style="max-width: 992px;">
       <nuxt-link to="/" class="logo__brand">
         <img src="/eaglesoft.webp" alt="Logo" class="logo-image" />
         <span class="logo__brand-text d-none md:d-block">eaglesoft Ghana</span>
@@ -84,8 +81,9 @@ watchEffect(() => {
             <li class="mx-2">
               <div class="app-header__dropdown relative" @mouseenter="showDropdown = true"
                 @mouseleave="showDropdown = false">
-                <nuxt-link class="link-light" exact-active-class="active" active-class="active" to="/products">Products
-                  <FontAwesomeIcon :icon="faChevronDown" :class="{ 'rotate-180': showDropdown }" />
+                <nuxt-link class="link-light flex items-center" exact-active-class="active" active-class="active"
+                  to="/products">Products
+                  <ChevronDownIcon :class="{ 'rotate-180': showDropdown }" />
                 </nuxt-link>
                 <Transition name="fade" mode="out-in">
                   <div v-if="showDropdown"
@@ -196,7 +194,7 @@ watchEffect(() => {
           </ul>
         </div>
         <button type="button" class="button no-outline pr-0 lg:d-none text-light" @click="showMenu">
-          <FontAwesomeIcon :icon="faBarsStaggered" size="lg" />
+          <AlignRightIcon />
         </button>
       </nav>
     </header>
@@ -211,9 +209,9 @@ watchEffect(() => {
             <span class="logo__brand-text text-lg">eaglesoft Ghana</span>
           </nuxt-link>
           <!-- <img src="/eaglesoft.webp" alt="" class="logo-image" /> -->
-          <button type="button" title="Close Menu | Exit" class="button px-3 py-1 bg-gray-800"
+          <button type="button" title="Close Menu | Exit" class="button sm flex items-center bg-gray-800"
             @click="isMobileMenuActive = false">
-            <FontAwesomeIcon :icon="faX" class="text-success" size="lg" />
+            <XIcon />
           </button>
         </div>
         <ul class="list-unstyled flex flex-column my-3">
@@ -238,9 +236,9 @@ watchEffect(() => {
                 <FontAwesomeIcon :icon="faChevronRight" fixed-width class="mr-2" size="xs" />
                 Products / Softwares
               </nuxt-link>
-              <button class="button py-1 no-outline mb-2" @click="showMobileMenuDropdown = !showMobileMenuDropdown">
-                <FontAwesomeIcon :icon="showMobileMenuDropdown || mobileMenuLinkActive() ? faMinus : faPlus"
-                  size="lg" />
+              <button class="button py-1 no-outline mb-2" @click.prevent="showMobileMenuDropdown = !showMobileMenuDropdown">
+                <ChevronDownIcon v-if="showMobileMenuDropdown || mobileMenuLinkActive()" />
+                <ChevronRight v-else />
               </button>
             </div>
             <Transition name="fade" mode="out-in">
@@ -351,8 +349,8 @@ watchEffect(() => {
 .mobile-menu {
   width: 100%;
   max-width: 425px;
-  -webkit-backdrop-filter: blur(25px);
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   background-color: rgba(33, 37, 41, 0.25);
 
   & * {

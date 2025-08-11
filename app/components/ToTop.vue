@@ -1,6 +1,7 @@
 <script setup>
-import { faChevronUp } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { ChevronUp } from 'lucide-vue-next';
+
+
 
 const showToTop = ref(false);
 
@@ -32,7 +33,7 @@ onUnmounted(() => {
   <Transition name="dropdown-fade" mode="out-in">
     <div v-if="showToTop" @click="handleClick"
       class="fixed to-top bg-primary shadow-lg px-4 py-3 rounded text-white cursor-pointer z-index-40" title="To Top">
-      <FontAwesomeIcon :icon="faChevronUp" />
+      <ChevronUp/>
     </div>
   </Transition>
 </template>

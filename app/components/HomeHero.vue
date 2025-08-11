@@ -34,7 +34,7 @@ import img from '~/assets/image/web-bg.webp';
 <style>
 .home__hero__wrapper {
   position: relative;
-  height: 60vh;
+  height: 100vh;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -42,9 +42,9 @@ import img from '~/assets/image/web-bg.webp';
 }
 
 @media screen and (max-width: 768px) {
-  .home__hero__wrapper {
+  /* .home__hero__wrapper {
     height: 60vh;
-  }
+  } */
 
   .header-overlay {
     -webkit-backdrop-filter: blur(2.5px) !important;

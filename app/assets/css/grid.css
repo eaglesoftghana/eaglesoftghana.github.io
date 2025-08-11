@@ -30,7 +30,7 @@
 
 /* Grid Gap Utilities */
 .gap-0 {
-	gap: 0;
+	gap: 0 !important;
 }
 .gap-1 {
 	gap: 0.25rem;

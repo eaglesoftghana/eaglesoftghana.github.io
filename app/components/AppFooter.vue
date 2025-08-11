@@ -1,8 +1,6 @@
 <script setup>
-import { faEnvelope, faPaperPlane } from '@fortawesome/free-regular-svg-icons';
 import { faFacebookF, faWhatsapp, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
-import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone';
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
 
 const isGetInTouchButtonDisabled = ref(true)
@@ -25,7 +23,7 @@ const handleGetIntouchForm = () => {
 
 <template>
   <footer class="bg-primary text-gray-300 py-4 sticky top-100">
-    <div class="layout">
+    <div class="layout" style="max-width: 992px;">
       <div class="row">
         <div class="col-12 lg:col-4 md:col-6 gy-3 lg:gy-0 order-2">
           <h6 class="text-capitalize font-bold mb-1 text-white">explore</h6>

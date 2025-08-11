@@ -26,3 +26,10 @@ export function initials(name: string = "") {
 	}
 	return parts.map((part) => part.charAt(0).toUpperCase()).join("");
 }
+
+export default function useApp() {
+	return {
+		initials,
+		truncateText,
+	};
+}

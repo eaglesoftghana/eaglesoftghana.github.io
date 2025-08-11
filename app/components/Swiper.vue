@@ -1,7 +1,7 @@
 <script setup lang="ts">
+import { ChevronLeftIcon, ChevronRight } from 'lucide-vue-next';
 
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+
 const props = withDefaults(defineProps<{
   itemCount: number,
   autoplay?: boolean,
@@ -14,7 +14,9 @@ const props = withDefaults(defineProps<{
   interval: 5000,
   showControls: true,
   showIndicators: true
-})
+});
+
+const attr = useAttrs();
 
 const currentIndex = ref(0)
 const containerWidth = ref(0)
@@ -145,7 +147,7 @@ watch(() => props.autoplay, (newVal) => {
 watch(() => props.itemCount, () => {
   currentIndex.value = 0
   nextTick(initCarousel)
-})
+});
 </script>
 
 <template>
@@ -153,7 +155,7 @@ watch(() => props.itemCount, () => {
     <div class="carousel-container" @mouseover="stopAutoplay" @touchstart.passive="startDrag" @touchmove.passive="duringDrag"
       @touchend.passive="endDrag" @mousedown="startDrag" @mousemove="duringDrag" @mouseup="endDrag"
       @mouseleave="endDrag" @mouseout="startAutoplay">
-      <div class="carousel-track" :style="trackStyle">
+      <div class="carousel-track" v-bind="attr" :style="trackStyle">
         <div v-for="index in itemCount" :key="index" class="carousel-item">
           <div class="carousel-item-content">
             <slot :index="index - 1" :isActive="currentIndex === index - 1"></slot>
@@ -167,11 +169,11 @@ watch(() => props.itemCount, () => {
       <div>
         <button v-if="showControls" type="button" title="Previous"
           class="button no-outline dark:bg-gray-800 dark:text-white prev" @click="prev">
-          <FontAwesomeIcon :icon="faChevronLeft" />
+          <ChevronLeftIcon/>
         </button>
         <button v-if="showControls" type="button" title="Next"
           class="button no-outline dark:bg-gray-800 dark:text-white next" @click="next">
-          <FontAwesomeIcon :icon="faChevronLeft" class="rotate-180" />
+          <ChevronRight/>
         </button>
       </div>
   </div>
@@ -188,7 +190,7 @@ watch(() => props.itemCount, () => {
 
 .carousel-container {
   overflow: hidden;
-  cursor: grab;
+  cursor: default;
   touch-action: pan-y;
   width: 100%;
   height: 100%;
@@ -202,6 +204,8 @@ watch(() => props.itemCount, () => {
   width: 100%;
   position: relative;
   flex-wrap: nowrap;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
 }
 
 .carousel-item {
