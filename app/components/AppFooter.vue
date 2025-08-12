@@ -2,6 +2,7 @@
 import { faFacebookF, faWhatsapp, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
 
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome';
+import { MailIcon, PhoneCall, SendHorizonal } from 'lucide-vue-next';
 
 const isGetInTouchButtonDisabled = ref(true)
 
@@ -59,7 +60,7 @@ const handleGetIntouchForm = () => {
           <div class="flex flex-column">
             <div class="flex items-center mb-2">
               <div class="mr-2">
-                <FontAwesomeIcon :icon="faPhone" />
+                <PhoneCall />
               </div>
               <div class="text-light">
                 <p class="select-all">
@@ -69,7 +70,7 @@ const handleGetIntouchForm = () => {
             </div>
             <div class="flex items-center mb-2">
               <div class="mr-2">
-                <FontAwesomeIcon :icon="faPhone" />
+                <PhoneCall />
               </div>
               <div class="text-light">
                 <p class="select-all">
@@ -79,7 +80,7 @@ const handleGetIntouchForm = () => {
             </div>
             <div class="flex items-center mb-2">
               <div class="mr-2">
-                <FontAwesomeIcon :icon="faEnvelope" />
+                <MailIcon />
               </div>
               <div class="text-light">
                 <nuxt-link class="select-all text-light">
@@ -87,15 +88,16 @@ const handleGetIntouchForm = () => {
                 </nuxt-link>
               </div>
             </div>
-            <div class="flex items-center my-2" style="max-width: 375px;">
+            <div class="flex items-center my-2 w-100" style="max-width: 425px;">
               <form @submit.prevent="handleGetIntouchForm" class="flex items-center w-100 input-wrapper rounded-2">
-                <button type="submit" :disabled="isGetInTouchButtonDisabled"
-                  class="button outline border-white px-2 py-2 absolute mr-1 dark rounded-full">
-                  <FontAwesomeIcon :icon="faPaperPlane" style="flex-shrink: 0;" size="lg" />
+                <input required v-model="getIntouchInput" @input="handleGetIntouchInput"
+                  class="text-input border-0 outline-0 w-100" inputmode="email" type="email"
+                  placeholder="Enter your email address" style="flex-grow: 1;outline-color: var(--color-muted);" />
+                <button type="submit"
+                  class="button outline  sm py-3 px-3 flex items-center relative mr-1 light rounded-full"
+                  style="right: 45px;">
+                  <SendHorizonal style="flex-shrink: 0;" />
                 </button>
-                <input v-model="getIntouchInput" @input="handleGetIntouchInput" class="text-input border-0 outline-0"
-                  type="email" placeholder="Enter your email address"
-                  style="flex-grow: 1;outline-color: var(--color-muted);" />
               </form>
             </div>
           </div>
@@ -107,16 +109,16 @@ const handleGetIntouchForm = () => {
         </h4>
         <div class="flex align-center social-links justify-center md:justify-start">
           <NuxtLink to="//facebook.com/eaglesoftghana" external target="_blank">
-            <FontAwesomeIcon :icon="faFacebookF" />
+            <FontAwesomeIcon :icon="faFacebookF" title="Facebook" />
           </NuxtLink>
           <NuxtLink to="//api.whatsapp.com/send/?phone=%2B233543093942&text&type=phone_number&app_absent=0" external
-            target="_blank">
+            target="_blank" title="WhatsApp">
             <FontAwesomeIcon :icon="faWhatsapp" size="lg" />
           </NuxtLink>
-          <NuxtLink to="//x.com/quajoking_0" external target="_blank">
+          <NuxtLink to="//x.com/quajoking_0" external target="_blank" title="X (twitter)">
             <FontAwesomeIcon :icon="faXTwitter" />
           </NuxtLink>
-          <NuxtLink to="//youtube.com/@quajoking" external target="_blank">
+          <NuxtLink to="//youtube.com/@quajoking" external target="_blank" title="Youtube">
             <FontAwesomeIcon :icon="faYoutube" />
           </NuxtLink>
         </div>
@@ -135,10 +137,6 @@ const handleGetIntouchForm = () => {
 </template>
 
 <style scoped>
-.input-wrapper input.text-input {
-  padding-left: 2.8rem !important;
-}
-
 a.hover\:text-link:hover {
   color: var(--color-info-alt);
 }

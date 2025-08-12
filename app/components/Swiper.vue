@@ -204,8 +204,6 @@ watch(() => props.itemCount, () => {
   width: 100%;
   position: relative;
   flex-wrap: nowrap;
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
 }
 
 .carousel-item {

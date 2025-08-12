@@ -10,10 +10,11 @@ useHead({
 
 <template>
   <div>
-    <hero name="about us"/>
-    about
+    <hero name="about us" />
+    <div class="layout" style="max-width: 992px;">
+      about
+    </div>
   </div>
 </template>
 
-<style scoped>
-</style>
+<style scoped></style>

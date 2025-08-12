@@ -10,7 +10,9 @@ useHead({
 
 <template>
   <Hero name="contact us"/>
-contact
+  <div class="layout" style="max-width: 992px;">
+    contact 
+  </div>
 </template>
 
 <style scoped>

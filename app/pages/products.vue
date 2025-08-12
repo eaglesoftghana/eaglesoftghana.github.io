@@ -11,7 +11,7 @@ useHead({
 <template>
   <div>
     <hero name="software products" />
-    <div class="layout">
+    <div class="layout" style="max-width: 992px;">
       <div class="what__we__do">
         <h5 class="text-center lg:text-2xl font-bold mb-4 text-capitalize">
           our software products

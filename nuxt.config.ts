@@ -6,7 +6,7 @@ export default defineNuxtConfig({
 	},
 	compatibilityDate: "2025-07-15",
 	devtools: { enabled: true },
-	ssr: false,
+	// ssr: false,
 	css: ["~/assets/app.css"],
 	app: {
     baseURL: '/',
@@ -14,7 +14,7 @@ export default defineNuxtConfig({
 			title: "eaglesoft ghana".toUpperCase(),
 			htmlAttrs: {
 				lang: "en-GH",
-				// class: "theme-light",
+				class: "dark",
 			},
 			link: [
 				{

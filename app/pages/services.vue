@@ -11,7 +11,7 @@ useHead({
 <template>
   <div>
     <hero name="services" />
-    <div class="layout">
+    <div class="layout" style="max-width: 992px;">
       <div class="services">
         <h5 class="text-center text-2xl font-bold mb-4 text-capitalize">
           our services & expertise
