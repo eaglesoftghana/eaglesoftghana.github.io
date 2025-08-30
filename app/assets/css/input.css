@@ -18,11 +18,10 @@
     font-size: inherit;
 }
 input.text-input:not([type='file']):not([type='image']):not([type='checkbox']):not([type='radio']),
-select,
 textarea {
     display: inline-block;
     width: 100%;
-    padding: var(--spacing-2) var(--spacing-1);
+    padding: var(--spacing-2) var(--spacing-2);
     outline: 1.5px solid var(--color-primary);
     border: none;
     border-radius: var(--spacing-1);
@@ -66,6 +65,39 @@ textarea {
     }
 }
 
+.select-list {
+  display: inline-block;
+    min-height: auto;
+    box-shadow: none;
+    transition: outline 0.2s linear;
+    /* padding-top: 0.45rem;
+    padding-bottom: 0.47rem; */
+    /* padding: var(--spacing-3) var(--spacing-2); */
+    background: var(--color-bg);
+    outline: 0.11rem solid var(--color-primary);
+    border: none;
+    border-radius: 0.2rem;
+    line-height: 1.5;
+    font-size: var(--font-size-base);
+    text-overflow: ellipsis;
+    width: 100%;
+    color: var(--color-text);
+
+    &::placeholder {
+        color: var(--color-gray-600);
+    }
+    &.sm {
+        padding: var(--spacing-1) var(--spacing-1);
+        font-size: var(--font-size-sm);
+    }
+    &.lg {
+        padding: var(--spacing-4) var(--spacing-2);
+        font-size: var(--font-size-lg);
+    }
+    &::placeholder {
+        color: var(--color-gray-600);
+    }
+}
 @media (prefers-reduced-motion: reduce) {
     input {
         transition: none;

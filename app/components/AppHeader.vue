@@ -60,8 +60,8 @@ watch(() => isMobileMenuActive.value, () => {
 </script>
 
 <template>
-  <div class="app-header fixed top-0 left-0 right-0 z-index-100 shadow-md mb-2">
-    <header class="layout py-2 d-flex justify-between items-center" style="max-width: 992px;">
+  <div class="app-header fixed top-0 left-0 right-0 z-index-100 shadow-md">
+    <header class="layout flex justify-between items-center" style="height: 60px;max-width: 992px;">
       <nuxt-link to="/" class="logo__brand">
         <img src="/eaglesoft.webp" alt="Logo" class="logo-image" />
         <span class="logo__brand-text d-none md:d-block">eaglesoft Ghana</span>
@@ -407,15 +407,14 @@ a.active {
 }
 
 .app-header {
-  transition: all .3s ease-in-out;
+  background-color: var(--color-gray-900);
+  transition: all .3s ease-out;
   color: var(--color-light);
 }
 
 .app-header.scrolling {
-  transition: all .3s ease-in-out;
-  -webkit-backdrop-filter: blur(8px);
-  backdrop-filter: blur(8px);
-  background-color: rgba(0, 0, 0, 0.65);
+  transition: all .3s ease-in;
+  background-color: var(--color-primary);
 }
 
 .app-header__dropdown-menu a:hover,

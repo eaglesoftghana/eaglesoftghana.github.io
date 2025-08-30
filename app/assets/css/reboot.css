@@ -9,7 +9,7 @@ body {
   color: var(--color-text);
   background-color: var(--color-bg);
   font-size: var(--font-size-base);
-  height: 100vh;
+  /* height: 100vh; */
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

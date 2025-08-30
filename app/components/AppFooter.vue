@@ -26,7 +26,7 @@ const handleGetIntouchForm = () => {
   <footer class="bg-primary text-gray-300 py-4 sticky top-100">
     <div class="layout" style="max-width: 992px;">
       <div class="row">
-        <div class="col-12 lg:col-4 md:col-6 gy-3 lg:gy-0 order-2">
+        <div class="col-12 lg:col-4 md:col-6 gy-3 lg:gy-0 order-2 md:px-3">
           <h6 class="text-capitalize font-bold mb-1 text-white">explore</h6>
           <div class="flex flex-column">
             <nuxt-link to="/products" class="mb-2 d-inline-block text-light">
@@ -94,7 +94,7 @@ const handleGetIntouchForm = () => {
                   class="text-input border-0 outline-0 w-100" inputmode="email" type="email"
                   placeholder="Enter your email address" style="flex-grow: 1;outline-color: var(--color-muted);" />
                 <button type="submit"
-                  class="button outline  sm py-3 px-3 flex items-center relative mr-1 light rounded-full"
+                  class="button outline  sm py-2 px-2 flex items-center relative mr-0 light rounded-full"
                   style="right: 45px;">
                   <SendHorizonal style="flex-shrink: 0;" />
                 </button>

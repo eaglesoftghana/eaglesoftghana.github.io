@@ -23,9 +23,9 @@ body {
 	font-family: "Open Sans", sans-serif;
 }
 
-#__nuxt {
+/* #__nuxt {
 	height: 100vh;
-}
+} */
 /* @media screen and (max-width: 540px) {
   body{
     font-size: var(--font-size-sm);

@@ -4,8 +4,8 @@ import img from '~/assets/image/web-bg.webp';
 </script>
 
 <template>
-  <div class="header-overlay" :style="{ backgroundImage: `url(${img})` }">
-    <div class="layout-fluid px-0 h-100">
+  <div class="w-100 swiper-layout">
+    <div class="layout-fluid h-100">
       <Swiper :item-count="3" :show-controls="false" :show-indicators="true" autoplay :interval="8000">
         <template v-slot="{ index, isActive }">
           <div class="home__hero__content text-center" v-show="index === 0">
@@ -25,11 +25,32 @@ import img from '~/assets/image/web-bg.webp';
           </div>
         </template>
       </Swiper>
+
     </div>
   </div>
 </template>
 
 <style>
+.swiper-layout {
+  min-height: 100%;
+  height: 280px;
+  position: relative;
+  background-color: var(--color-gray-900);
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 425px) {
+  .swiper-layout {
+    height: 320px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .swiper-layout {
+    height: 420px;
+  }
+}
+
 .header-overlay {
   width: 100%;
   height: 100vh;

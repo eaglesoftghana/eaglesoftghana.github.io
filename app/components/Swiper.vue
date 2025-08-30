@@ -185,23 +185,23 @@ watch(() => props.itemCount, () => {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  max-width: 100vw;
 }
 
 .carousel-container {
   overflow: hidden;
   cursor: default;
   touch-action: pan-y;
-  width: 100%;
-  height: 100%;
+  width:inherit;
+  height: inherit;
   position: relative;
+  height: 100%;
 }
 
 .carousel-track {
   display: flex;
   height: 100%;
-  will-change: transform;
   width: 100%;
+  will-change: transform;
   position: relative;
   flex-wrap: nowrap;
 }
@@ -235,7 +235,7 @@ watch(() => props.itemCount, () => {
 
 button.prev,
 button.next {
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   background: rgba(0, 0, 0, 0.3);
