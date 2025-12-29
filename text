@@ -1,0 +1,734 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eaglesoft Ghana - Innovative SaaS Solutions for Ghana</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --color-primary: 29 78 216; 
+      }
+      .bg-primary {
+        background-color: rgb(var(--color-primary));
+      }
+      .text-primary {
+        color: rgb(var(--color-primary));
+      }
+      .border-primary {
+        border-color: rgb(var(--color-primary));
+      }
+      .hover\:bg-primary-dark:hover {
+        background-color: rgb(20 66 182); 
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800 antialiased">
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm shadow-md">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center">
+            <a href="#" class="text-2xl font-bold text-primary"
+              >Eaglesoft Ghana</a
+            >
+          </div>
+
+          <div class="hidden md:block">
+            <div class="ml-10 flex items-baseline space-x-4">
+              <a
+                href="#solutions"
+                class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition duration-150"
+                >Our Solutions</a
+              >
+              <a
+                href="#features"
+                class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition duration-150"
+                >Why Us</a
+              >
+              <a
+                href="#pricing"
+                class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition duration-150"
+                >Pricing</a
+              >
+              <a
+                href="#contact"
+                class="text-gray-600 hover:text-primary px-3 py-2 text-sm font-medium transition duration-150"
+                >Contact</a
+              >
+            </div>
+          </div>
+
+          <div class="hidden md:block">
+            <button
+              class="rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white shadow-lg hover:bg-primary-dark transition duration-300"
+            >
+              Get Started Free
+            </button>
+          </div>
+
+          <div class="-mr-2 flex md:hidden">
+            <button
+              type="button"
+              class="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-100 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+            >
+              <svg
+                class="block h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16M4 18h16"
+                />
+              </svg>
+              <svg
+                class="hidden h-6 w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                aria-hidden="true"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M6 18L18 6M6 6l12 12"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </nav>
+      <div class="md:hidden" id="mobile-menu">
+        <div class="space-y-1 px-2 pt-2 pb-3 sm:px-3">
+          <a
+            href="#solutions"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
+            >Our Solutions</a
+          >
+          <a
+            href="#features"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
+            >Why Us</a
+          >
+          <a
+            href="#pricing"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
+            >Pricing</a
+          >
+          <a
+            href="#contact"
+            class="block rounded-md px-3 py-2 text-base font-medium text-gray-700 hover:bg-gray-50"
+            >Contact</a
+          >
+          <button
+            class="w-full rounded-lg bg-primary px-4 py-2 text-base font-semibold text-white shadow-lg hover:bg-primary-dark transition duration-300 mt-2"
+          >
+            Get Started Free
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section
+        class="relative overflow-hidden pt-16 pb-24 sm:pt-24 lg:pt-32"
+        id="home"
+      >
+        <div class="absolute inset-0 z-0 opacity-10">
+          <svg
+            class="h-full w-full"
+            viewBox="0 0 100 100"
+            preserveAspectRatio="none"
+          >
+            <defs>
+              <pattern
+                id="dot-pattern"
+                width="8"
+                height="8"
+                patternUnits="userSpaceOnUse"
+              >
+                <circle cx="1" cy="1" r="1" fill="#e5e7eb" />
+              </pattern>
+            </defs>
+            <rect width="100%" height="100%" fill="url(#dot-pattern)" />
+          </svg>
+        </div>
+
+        <div class="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="lg:grid lg:grid-cols-12 lg:gap-8">
+            <div
+              class="sm:text-center md:mx-auto md:max-w-2xl lg:col-span-6 lg:text-left"
+            >
+              <span
+                class="inline-flex items-center rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary mb-4"
+              >
+                Built for the Ghanaian Market 🇬🇭
+              </span>
+              <h1
+                class="text-4xl font-extrabold tracking-tight text-gray-900 sm:text-5xl md:text-6xl"
+              >
+                The Future of <span class="text-primary">Local SaaS</span> is
+                Here.
+              </h1>
+              <p class="mt-6 text-lg text-gray-500">
+                Eaglesoft Ghana provides powerful, localized SaaS solutions—from
+                comprehensive **Clinic Plus** Health Management to advanced **My
+                School GH** systems—tailored for the needs of Ghanaian
+                enterprises.
+              </p>
+              <div
+                class="mt-10 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-4"
+              >
+                <button
+                  class="rounded-lg bg-primary px-8 py-3 text-base font-semibold text-white shadow-xl hover:bg-primary-dark transition duration-300"
+                >
+                  Explore Solutions
+                </button>
+                <button
+                  class="rounded-lg bg-white border border-gray-300 px-8 py-3 text-base font-semibold text-primary shadow-md hover:bg-gray-100 transition duration-300"
+                >
+                  Book a Demo
+                </button>
+              </div>
+            </div>
+            <div class="mt-12 lg:col-span-6 lg:mt-0">
+              <div
+                class="aspect-video rounded-xl bg-gray-200 shadow-2xl flex items-center justify-center border-4 border-white overflow-hidden"
+              >
+                <p class="text-gray-500 font-semibold">
+                  🖥️ Product Screenshot Placeholder
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 sm:py-24" id="solutions">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <div class="lg:text-center">
+            <h2 class="text-lg font-semibold text-primary">
+              Our SaaS Ecosystem
+            </h2>
+            <p
+              class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 sm:text-4xl"
+            >
+              Solutions Built for Local Impact
+            </p>
+            <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
+              Streamline your operations and drive efficiency with our
+              specialized, high-performance software.
+            </p>
+          </div>
+
+          <div class="mt-20">
+            <div class="grid grid-cols-1 gap-12 sm:grid-cols-2 lg:grid-cols-3">
+              <div class="pt-6">
+                <div
+                  class="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition duration-300 hover:shadow-xl"
+                >
+                  <div class="-mt-6">
+                    <div>
+                      <span
+                        class="inline-flex items-center justify-center rounded-md bg-primary p-3 shadow-lg"
+                      >
+                        <svg
+                          class="h-6 w-6 text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <h3
+                      class="mt-8 text-xl font-bold tracking-tight text-gray-900"
+                    >
+                      Clinic Plus
+                    </h3>
+                    <p class="mt-5 text-base text-gray-500">
+                      Comprehensive Health Information Management System for
+                      clinics and healthcare providers. Manage patient records,
+                      appointments, and billing efficiently.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6">
+                <div
+                  class="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition duration-300 hover:shadow-xl"
+                >
+                  <div class="-mt-6">
+                    <div>
+                      <span
+                        class="inline-flex items-center justify-center rounded-md bg-primary p-3 shadow-lg"
+                      >
+                        <svg
+                          class="h-6 w-6 text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <h3
+                      class="mt-8 text-xl font-bold tracking-tight text-gray-900"
+                    >
+                      My School GH
+                    </h3>
+                    <p class="mt-5 text-base text-gray-500">
+                      All-in-one school management system designed for Ghanaian
+                      basic schools, handling admissions, grading, and parent
+                      communications.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6">
+                <div
+                  class="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition duration-300 hover:shadow-xl"
+                >
+                  <div class="-mt-6">
+                    <div>
+                      <span
+                        class="inline-flex items-center justify-center rounded-md bg-primary p-3 shadow-lg"
+                      >
+                        <svg
+                          class="h-6 w-6 text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21.011z"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <h3
+                      class="mt-8 text-xl font-bold tracking-tight text-gray-900"
+                    >
+                      Vote360
+                    </h3>
+                    <p class="mt-5 text-base text-gray-500">
+                      Secure and reliable online voting system for all internal
+                      elections (corporate, school, association), excluding
+                      national elections.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6">
+                <div
+                  class="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition duration-300 hover:shadow-xl"
+                >
+                  <div class="-mt-6">
+                    <div>
+                      <span
+                        class="inline-flex items-center justify-center rounded-md bg-primary p-3 shadow-lg"
+                      >
+                        <svg
+                          class="h-6 w-6 text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <h3
+                      class="mt-8 text-xl font-bold tracking-tight text-gray-900"
+                    >
+                      My School Portal
+                    </h3>
+                    <p class="mt-5 text-base text-gray-500">
+                      A specialized, standalone student portal module for Senior
+                      High Schools, managing academics and resources
+                      efficiently.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="pt-6">
+                <div
+                  class="flow-root rounded-lg bg-white px-6 pb-8 shadow-lg transition duration-300 hover:shadow-xl"
+                >
+                  <div class="-mt-6">
+                    <div>
+                      <span
+                        class="inline-flex items-center justify-center rounded-md bg-primary p-3 shadow-lg"
+                      >
+                        <svg
+                          class="h-6 w-6 text-white"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke="currentColor"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            stroke-width="2"
+                            d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0h6"
+                          />
+                        </svg>
+                      </span>
+                    </div>
+                    <h3
+                      class="mt-8 text-xl font-bold tracking-tight text-gray-900"
+                    >
+                      Pharma Plus
+                    </h3>
+                    <p class="mt-5 text-base text-gray-500">
+                      A lightweight, intuitive pharmacy management system for
+                      managing drug inventory, sales, and localized reporting.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="bg-primary/95 py-16 sm:py-20" id="cta">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
+          <h2
+            class="text-3xl font-extrabold tracking-tight text-white sm:text-4xl"
+          >
+            Ready to Transform Your Operations?
+          </h2>
+          <p class="mt-4 text-xl text-primary-200">
+            Join the growing number of Ghanaian institutions benefiting from
+            tailored software.
+          </p>
+          <div class="mt-8 flex justify-center">
+            <button
+              class="rounded-lg bg-white px-8 py-3 text-base font-semibold text-primary shadow-xl hover:bg-gray-100 transition duration-300"
+            >
+              Get a Custom Quote Today
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 sm:py-24 bg-white">
+        <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+          <h2 class="text-lg font-semibold text-primary text-center">
+            Trusted by Local Leaders
+          </h2>
+          <p
+            class="mt-2 text-3xl font-extrabold leading-8 tracking-tight text-gray-900 text-center sm:text-4xl"
+          >
+            What Our Ghanaian Clients Say
+          </p>
+
+          <div class="mt-12 grid gap-8 md:grid-cols-3">
+            <blockquote
+              class="bg-gray-50 p-6 rounded-xl shadow-md border-t-4 border-primary"
+            >
+              <p class="text-lg italic text-gray-600">
+                "Clinic Plus simplified our patient flow and record keeping
+                immensely. The local support and tailored features are
+                unmatched."
+              </p>
+              <footer class="mt-4">
+                <p class="text-base font-semibold text-gray-900">
+                  Dr. Adwoa Mensah
+                </p>
+                <p class="text-sm text-primary">
+                  Director, Accra Health Clinic
+                </p>
+              </footer>
+            </blockquote>
+
+            <blockquote
+              class="bg-gray-50 p-6 rounded-xl shadow-md border-t-4 border-primary"
+            >
+              <p class="text-lg italic text-gray-600">
+                "My School GH has made parent communication and grading
+                effortless. It's truly built for our school environment."
+              </p>
+              <footer class="mt-4">
+                <p class="text-base font-semibold text-gray-900">
+                  Mr. Kwesi Nartey
+                </p>
+                <p class="text-sm text-primary">
+                  Headmaster, Liberty Basic School
+                </p>
+              </footer>
+            </blockquote>
+
+            <blockquote
+              class="bg-gray-50 p-6 rounded-xl shadow-md border-t-4 border-primary"
+            >
+              <p class="text-lg italic text-gray-600">
+                "The team at Eaglesoft Ghana understands the market. Their
+                dedication to robust, local solutions is why we chose them."
+              </p>
+              <footer class="mt-4">
+                <p class="text-base font-semibold text-gray-900">
+                  Ama Oforiwaa
+                </p>
+                <p class="text-sm text-primary">CEO, GH Tech Solutions</p>
+              </footer>
+            </blockquote>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-20 sm:py-24 bg-gray-50" id="faq">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <h2
+            class="text-3xl font-extrabold text-gray-900 text-center sm:text-4xl"
+          >
+            Frequently Asked Questions
+          </h2>
+
+          <div class="mt-12 space-y-6">
+            <details class="rounded-lg bg-white shadow-lg p-6 group">
+              <summary
+                class="flex justify-between items-center cursor-pointer text-xl font-semibold text-gray-800 hover:text-primary"
+              >
+                <span
+                  >Are your systems compatible with local payment gateways
+                  (e.g., Mobile Money)?</span
+                >
+                <svg
+                  class="w-6 h-6 text-primary group-open:rotate-180 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </summary>
+              <p class="mt-4 text-gray-600 border-t pt-4">
+                Yes, a key advantage of Eaglesoft Ghana is our commitment to
+                localization. All our relevant SaaS platforms integrate smoothly
+                with popular Ghanaian payment gateways like Mobile Money and
+                local banks.
+              </p>
+            </details>
+
+            <details class="rounded-lg bg-white shadow-lg p-6 group">
+              <summary
+                class="flex justify-between items-center cursor-pointer text-xl font-semibold text-gray-800 hover:text-primary"
+              >
+                <span
+                  >How is data security handled, especially for sensitive data
+                  like in Clinic Plus?</span
+                >
+                <svg
+                  class="w-6 h-6 text-primary group-open:rotate-180 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </summary>
+              <p class="mt-4 text-gray-600 border-t pt-4">
+                We prioritize data privacy and security, adhering to best
+                international practices. We ensure data is encrypted both in
+                transit and at rest, with robust access controls and local
+                backup protocols tailored to regulatory requirements in Ghana.
+              </p>
+            </details>
+
+            <details class="rounded-lg bg-white shadow-lg p-6 group">
+              <summary
+                class="flex justify-between items-center cursor-pointer text-xl font-semibold text-gray-800 hover:text-primary"
+              >
+                <span
+                  >What support options are available for Eaglesoft Ghana
+                  products?</span
+                >
+                <svg
+                  class="w-6 h-6 text-primary group-open:rotate-180 transition-transform"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M19 9l-7 7-7-7"
+                  ></path>
+                </svg>
+              </summary>
+              <p class="mt-4 text-gray-600 border-t pt-4">
+                We offer dedicated local support via phone, email, and on-site
+                consultations (depending on your plan). Our support team is
+                based in Ghana, ensuring quick and culturally relevant
+                assistance.
+              </p>
+            </details>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-900 text-white pt-16 pb-8" id="contact">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+          <div>
+            <h4 class="text-xl font-bold mb-4 text-primary">Eaglesoft Ghana</h4>
+            <p class="text-gray-400 text-sm">
+              Building innovative, localized SaaS solutions for the Ghanaian
+              market.
+            </p>
+            <p class="mt-4 text-gray-400 text-sm">
+              © 2025 Eaglesoft Ghana. All rights reserved.
+            </p>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Our Products</h4>
+            <ul class="space-y-3 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-150"
+                  >Clinic Plus</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-150"
+                  >My School GH</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-150"
+                  >Vote360</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-150"
+                  >Pharma Plus</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Company</h4>
+            <ul class="space-y-3 text-sm">
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-150"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-150"
+                  >Careers</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-150"
+                  >Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#"
+                  class="text-gray-400 hover:text-white transition duration-150"
+                  >Terms & Privacy</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 class="text-lg font-semibold mb-4">Get In Touch</h4>
+            <p class="text-gray-400 text-sm">
+              Accra, Greater Accra Region, Ghana
+            </p>
+            <p class="text-gray-400 text-sm mt-2">
+              Email:
+              <a href="mailto:info@eaglesoftgh.com" class="hover:text-primary"
+                >info@eaglesoftgh.com</a
+              >
+            </p>
+            <p class="text-gray-400 text-sm">Phone: +233 XXX XXXX</p>
+          </div>
+        </div>
+
+        <div
+          class="mt-10 border-t border-gray-700 pt-8 flex justify-center space-x-6"
+        >
+          <a
+            href="#"
+            class="text-gray-400 hover:text-primary transition duration-150"
+          >
+            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.477 2 2 6.484 2 12.001 2 17.051 5.626 21.082 10.428 21.82 10.925 21.912 11.096 21.624 11.096 21.413l0-1.638c-3.856.843-4.665-1.859-4.665-1.859-.64-1.619-1.55-2.052-1.55-2.052-1.264-.863.095-.845.095-.845 1.398.098 2.133 1.43 2.133 1.43 1.242 2.126 3.267 1.516 4.062 1.157.126-.902.484-1.516.883-1.867-3.102-.351-6.365-1.55-6.365-6.902 0-1.524.545-2.772 1.44-3.748-.144-.351-.624-1.777.137-3.702 0 0 1.171-.375 3.834 1.43.082-.023.167-.035.25-.045.083-.01.168-.02.25-.03.52-.062 1.05-.094 1.579-.094.53 0 1.059.032 1.579.094.082.01.167.02.25.03.083.01.168.022.25.045 2.663-1.805 3.834-1.43 3.834-1.43.76 1.925.28 3.351.137 3.702.895.976 1.44 2.224 1.44 3.748 0 5.364-3.263 6.551-6.365 6.902.498.43.945 1.298.945 2.625l0 3.899c0 .211.171.498.673.41 4.793-.738 8.424-4.769 8.424-9.82 0-5.523-4.477-10.001-10-10.001z"
+              />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html> -->
