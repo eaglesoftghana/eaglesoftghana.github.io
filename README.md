@@ -1,75 +1,87 @@
-# Nuxt Minimal Starter
+# Eaglesoft Ghana
+**Your Partner in Digital Transformation**
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+<p align="center">
+  <img src="public/logo.svg" alt="Eaglesoft Ghana Logo" width="120" />
+</p>
 
-## Setup
+## About Us
 
-Make sure to install dependencies:
+Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market. Our mission is to empower businesses and institutions with robust, user-friendly, and locally-tailored systems that drive efficiency and growth.
 
-```bash
-# npm
-npm install
+## ✨ Our Flagship SaaS Products
 
-# pnpm
-pnpm install
+### Online Church Information System Ghana (OCIS GHANA)
 
-# yarn
-yarn install
+**Church the Modern Way**
 
-# bun
-bun install
-```
+OCIS GHANA is a comprehensive cloud-based solution designed to streamline the operations of churches and religious organizations. We are more than just a software provider; we are partners
+in ministry, dedicated to empowering church leaders to focus on what truly matters: serving their congregations and
+spreading the Gospel
 
-## Development Server
+---
 
-Start the development server on `http://localhost:3000`:
+### Clinic Plus
 
-```bash
-# npm
-npm run dev
+**A Comprehensive Health Information Management System**
 
-# pnpm
-pnpm dev
+Clinic Plus is an all-in-one solution for clinics and healthcare providers in Ghana. It streamlines patient registration, appointment scheduling, electronic health records (EHR), billing, and inventory management. Designed for ease of use, it helps healthcare facilities provide better care and manage their operations more effectively.
 
-# yarn
-yarn dev
+- **Key Features:** Patient Management, Appointments, Billing, Inventory, Reporting.
+- **Target Audience:** Clinics, Hospitals, and Healthcare Providers in Ghana.
+- **Keywords:** `ClinicPlus`, `health-tech`, `ehr`, `ghana-healthcare`, `clinic-management-system`.
 
-# bun
-bun run dev
-```
+---
 
-## Production
+### School Information System Ghana
 
-Build the application for production:
+**The Ultimate School Management System for Basic Schools**
 
-```bash
-# npm
-npm run build
+School Information System Ghana is a powerful and intuitive school management system designed to simplify administrative tasks for basic schools. It includes modules for student information, attendance tracking, result management, fees collection, and communication tools for parents and teachers.
 
-# pnpm
-pnpm build
+- **Key Features:** Student Records, Attendance, Exams & Results, Fees, Parent-Teacher Communication.
+- **Target Audience:** Basic Schools in Ghana.
+- **Keywords:** `MySchoolGH`, `school-management-system`, `edutech`, `ghana-education`, `basic-school-software`.
 
-# yarn
-yarn build
+---
 
-# bun
-bun run build
-```
+<!-- ### 🎓 My School Portal
+**Standalone Student & Parent Portal for Senior High Schools**
 
-Locally preview production build:
+This standalone module from our main system is specifically tailored for Senior High Schools. My School Portal provides students and parents with a dedicated platform to check academic performance, track attendance, view school announcements, and stay connected with the school's administration. -->
 
-```bash
-# npm
-npm run preview
+<!-- * **Key Features:** Student Dashboard, Results Checker, Announcements, Attendance Tracker.
+* **Target Audience:** Senior High School Students and Parents.
+* **Keywords:** `MySchoolPortal`, `shs-portal`, `student-information-system`, `ghana-shs`. -->
 
-# pnpm
-pnpm preview
+### Vote360 Online
 
-# yarn
-yarn preview
+**Secure & Flexible Online Voting System**
 
-# bun
-bun run preview
-```
+Vote360 Online offers a reliable and secure platform for conducting online elections. It's perfect for student council elections, association polls, club voting, and other non-national electoral processes. The system ensures transparency, accuracy, and ease of use for both administrators and voters.
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- **Key Features:** Secure Voting, Customizable Ballots, Voter Authentication, Real-time Results.
+- **Target Audience:** Schools, Associations, Clubs, and Organizations.
+- **Keywords:** `Vote360`, `online-voting`, `elections`, `secure-voting-platform`, `ghana-tech`.
+
+---
+
+### 💊 Pharma Plus
+
+**Lightweight Pharmacy Management & Inventory System**
+
+Pharma Plus is a simple yet effective solution for managing drug inventory and sales in pharmacies. It helps track stock levels, manage expiry dates, process sales transactions, and generate essential reports, ensuring efficient operations and minimizing stock-outs.
+
+- **Key Features:** Inventory Management, Sales & POS, Supplier Management, Reporting.
+- **Target Audience:** Small to medium-sized Pharmacies.
+- **Keywords:** `PharmaPlus`, `pharmacy-management`, `drug-inventory`, `pos-system`, `ghana-pharmacy`.
+
+## 🌐 Connect With Us
+
+- **Website:** [eaglesoftghana.com](https://eaglesoftghana.com)
+- **Facebook:** [facebook.com/eaglesoft-ghana](https://www.facebook.com/eaglesoft-ghana)
+- **Email:** [info@eaglesoftghana.com](mailto:info@eaglesoftghana.com)
+
+---
+
+_This repository contains the official website code for Eaglesoft Ghana._
