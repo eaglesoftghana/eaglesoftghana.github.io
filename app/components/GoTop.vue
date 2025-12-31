@@ -28,7 +28,7 @@
             <Teleport to="body">
                   <Transition name="fade" mode="out-in">
                         <div v-if="isShown" @click="handleClick" title="Go to top"
-                          class="fixed overflow-hidden z-12 p-2 bottom-6 md:bottom-10 right-2 md:right-20 backdrop-blur-xs border border-slate-500/20 dark:bg-slate-400/10 bg-slate-400/50 rounded-md cursor-pointer">
+                          class="fixed overflow-hidden z-12 p-2 bottom-6 md:bottom-10 right-6 md:right-20 backdrop-blur-xs border border-slate-500/20 dark:bg-slate-400/10 bg-slate-400/50 rounded-md cursor-pointer">
                               <ArrowUpToLineIcon class="h-6 md:h-8 w-auto text-global dark:text-white" />
                         </div>
                   </Transition>

@@ -1,13 +1,18 @@
 <script lang="ts" setup>
       import { AtomIcon, BlocksIcon, CrownIcon, LockKeyholeIcon, ScalingIcon, Share2Icon } from 'lucide-vue-next';
+      import constants from '~/constants';
 
       useSeoMeta({
             title: 'eaglesoft ghana'.toString().toUpperCase(),
             ogTitle: 'eaglesoft ghana'.toString().toUpperCase(),
             description: 'Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
             ogDescription: 'Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
-            ogImage: '/logo.svg',
             twitterCard: 'summary_large_image',
+            ogImage: {
+                  url: constants.APP_URL + '/apple-touch-icon.png'
+            },
+            ogUrl: constants.APP_URL,
+            ogType: 'website'
       })
 </script>
 
@@ -31,13 +36,13 @@
                               </NuxtLink>
                         </div>
                   </div>
-                  <div aria-hidden="true"
+                  <!-- <div aria-hidden="true"
                     class="blur-3xl transform-gpu -z-10 right-0 -top-2 sm:-top-24 absolute opacity-10">
                         <div
                           style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
                           class="dark:to-indigo-500 dark:from-cyan-400 from-purple-600 to-blue-300 bg-linear-to-tr w-351 aspect-1404/767">
                         </div>
-                  </div>
+                  </div> -->
             </div>
       </ESSection>
       <ESSection>
@@ -69,9 +74,10 @@
                           :icon="CrownIcon" href="//eaglechurchsuite.com" />
 
                         <div class="flex items-center justify-center">
-                              <NuxtLink class="lg:text-lg capitalize hover:text-global dark:hover:text-white"
+                              <NuxtLink class="text-lg capitalize hover:text-global dark:hover:text-white"
                                 :to="{ name: 'products' }">see
-                                    all products & features</NuxtLink>
+                                    all products & features
+                              </NuxtLink>
                         </div>
                   </div>
             </div>
@@ -105,7 +111,8 @@
                           text="Get world-class software at a price made just for you that respects the local market" />
                   </div>
             </ESSection>
-            <div aria-hidden="true" class="blur-[14rem] dark:blur-3xl transform-gpu -z-10 right-0 -top-2 sm:-top-24 absolute opacity-25">
+            <div aria-hidden="true"
+              class="blur-[14rem] dark:blur-3xl transform-gpu -z-10 right-0 -top-2 sm:-top-24 absolute opacity-5">
                   <div
                     style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
                     class="dark:to-indigo-500 dark:from-cyan-400 from-purple-600 to-blue-300 bg-linear-to-tr w-351 aspect-1404/767">
@@ -116,15 +123,10 @@
             <ESSection>
                   <div v-fade-in class="py-4 md:py-8">
                         <h6 class="text-center capitalize text-2xl font-semibold dark:text-white">
-                              customers feedback
-                        </h6>
-                        <!-- <p class="text-center text-lg pb-12">
-                              Streamline your operations and drive efficiency with our specialized, high-performance
-                              software.
-                        </p> -->
+                              what our clients say </h6>
                   </div>
                   <div v-fade-in
-                    class="flex basis-11/12 flex-row flex-nowrap overflow-x-auto space-x-4 scroll-smooth scrollbar-none">
+                    class="flex flex-row overflow-x-auto gap-x-4 space-x-4 scroll-smooth scrollbar-none bg-body py-4! rounded-md">
                         <TestimonialCard />
                         <TestimonialCard />
                         <TestimonialCard />

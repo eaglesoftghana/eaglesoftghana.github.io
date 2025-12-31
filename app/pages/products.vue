@@ -1,11 +1,17 @@
 <script lang="ts" setup>
+      import constants from '~/constants';
+
       useSeoMeta({
             title: 'products • eaglesoft ghana'.toString().toUpperCase(),
             ogTitle: 'products • eaglesoft ghana'.toString().toUpperCase(),
             description: 'Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
             ogDescription: 'Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
-            ogImage: '/logo.svg',
             twitterCard: 'summary_large_image',
+            ogImage: {
+                  url: constants.APP_URL + '/apple-touch-icon.png'
+            },
+            ogUrl: constants.APP_URL + '/products',
+            ogType: 'website'
       })
 </script>
 

@@ -36,7 +36,7 @@
 
 <template>
 
-  <header class="sticky top-0 z-50 shadow-md backdrop-blur-lg" :class="navBgColor">
+  <header class="sticky top-0 z-50 shadow-md backdrop-blur-lg bg-body" :class="navBgColor">
     <nav aria-label="Global" class="flex items-center justify-between p-3 lg:px-8 mx-auto max-w-7xl">
       <div class="flex lg:flex-1">
         <NuxtLink :to="{ name: 'index' }" active-class=" " exact-active-class=" " class="-m-1.5 p-1.5">

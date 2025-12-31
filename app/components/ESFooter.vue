@@ -21,7 +21,7 @@
                                     <Logo
                                       class="h-12 w-auto p-2 rounded-md backdrop-blur-xs border border-slate-500/20 dark:bg-slate-400/10"
                                       :fill-color="fillColor" />
-                                    <span class="capitalize">
+                                    <span class="capitalize text-nowrap">
                                           eaglesoft ghana
                                     </span>
                               </div>
@@ -55,7 +55,7 @@
                         </div>
                         <div class="pb-6 sm:pb-0">
                               <h3 class="font-semibold capitalize dark:text-zinc-300 pb-4 sm:pb-0">
-                                    flagship products
+                                    our flagship products
                               </h3>
                               <ul role="list" class="space-y-4 mt-3 sm:mt-5.5 capitalize">
                                     <li>
@@ -88,7 +88,7 @@
                               <h3 class="font-semibold capitalize dark:text-zinc-300">
                                     eaglesoft
                               </h3>
-                              <ul role="list" class="space-y-2 mt-3 sm:mt-5.5 capitalize">
+                              <ul role="list" class="space-y-4 mt-3 sm:mt-5.5 capitalize">
                                     <li>
                                           <NuxtLink class="dark:hover:text-white" :to="{ name: 'about' }">
                                                 about
@@ -115,7 +115,7 @@
                               <h3 class="font-semibold capitalize dark:text-zinc-300">
                                     legal
                               </h3>
-                              <ul role="list" class="space-y-2 mt-3 sm:mt-5.5 capitalize">
+                              <ul role="list" class="space-y-4 mt-3 sm:mt-5.5 capitalize">
                                     <li>
                                           <NuxtLink class="dark:hover:text-white" href="#">
                                                 terms of service
@@ -132,7 +132,7 @@
                               <h3 class="font-semibold capitalize dark:text-zinc-300">
                                     contact
                               </h3>
-                              <ul role="list" class="space-y-2 mt-3 sm:mt-5.5">
+                              <ul role="list" class="space-y-4 mt-3 sm:mt-5.5">
                                     <li>
                                           <NuxtLink class="dark:hover:text-white select-all cursor-text"
                                             href="tel:+233549289243">
