@@ -5,21 +5,21 @@
       useSeoMeta({
             title: 'services • eaglesoft ghana'.toString().toUpperCase(),
             ogTitle: 'services • eaglesoft ghana'.toString().toUpperCase(),
-            description: 'Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
-            ogDescription: 'Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
+            description: 'We build specialized, robust, and localized software (SaaS) tailored to meet the unique operational needs of the Ghanaian market. We are not just software architects; we provide comprehensive IT solutions that businesses need, from custom web apps and mobile development to computer networking, system installation, and digital marketing.',
+            ogDescription: 'We build specialized, robust, and localized software (SaaS) tailored to meet the unique operational needs of the Ghanaian market. We are not just software architects; we provide comprehensive IT solutions that businesses need, from custom web apps and mobile development to computer networking, system installation, and digital marketing.',
             twitterCard: 'summary_large_image',
             ogImage: {
                   url: constants.APP_URL + '/apple-touch-icon.png'
             },
             ogUrl: constants.APP_URL + '/services',
             ogType: 'website'
-      })
+      });
 </script>
 
 <template>
       <ESSection>
             <div class="mx-auto max-w-2xl py-8 sm:pt-16 lg:pt-32 overflow-hidden">
-                  <h2 v-fade-in class="text-2xl md:text-3xl font-bold dark:text-white text-center">
+                  <h2 v-fade-in class="text-2xl md:text-3xl font-bold text-global text-center">
                         Empowering Ghanaian Businesses and Institutions with Intelligent Software Solutions.
                   </h2>
             </div>
@@ -29,44 +29,42 @@
             <ESSection>
                   <div class="max-w-2xl mx-auto">
                         <p v-fade-in class="mt-4 text-justify text-lg">
-                              We build specialized, robust, and localized software (SaaS) tailored to meet
-                              the unique operational needs of the Ghanaian market.
+                              We build specialized, robust, and localized software (SaaS) tailored to meet the unique
+                              operational needs of the Ghanaian market.
                         </p>
                         <p v-fade-in class="mt-4 text-justify text-lg">
                               We are not just software architects; we provide comprehensive IT solutions that businesses
-                              need,
-                              from custom web apps and mobile development to computer networking, system installation,
-                              and digital marketing.
+                              need, from custom web apps and mobile development to computer networking, system
+                              installation, and digital marketing.
                         </p>
                         <div v-fade-in class="mt-6 text-center">
-                              <NuxtLink :to="{ hash: '#core-solutions' }"
+                              <NuxtLink :to="{ hash: '#core-solutions' }" active-class=" " exact-active-class=" "
                                 class="dark:text-white text-global text-lg font-semibold transition duration-300">
                                     Explore Our Solutions Below ↓
                               </NuxtLink>
                         </div>
                         <div aria-hidden="true"
-                          class="blur-[14rem] dark:blur-3xl transform-gpu -z-10 right-0 -top-2 sm:-top-24 absolute opacity-25">
+                          class="blur-3xl transform-gpu -z-10 right-0 -top-2 sm:-top-24 absolute opacity-5 dark:opacity-25">
                               <div
                                 style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"
-                                class="dark:to-indigo-500 dark:from-cyan-400 from-purple-600 to-blue-300 bg-linear-to-tr w-351 aspect-1404/767">
+                                class="dark:to-indigo-500 dark:from-cyan-400 from-global-50 to-cyan-300 bg-linear-to-tr w-351 aspect-1404/767">
                               </div>
                         </div>
                   </div>
             </ESSection>
       </div>
 
-      <ESSection id="core-solutions" class="py-16 rounded-xl">
+      <ESSection id="core-solutions" class="py-16">
             <h2 class="text-3xl dark:text-white font-bold text-center mb-12">
                   Extended IT Services & Digital Enablement
             </h2>
-            <p class="text-xl text-center mb-12">
+            <p class="text-xl text-center mb-8">
                   Our primary mission is to build scalable, market-specific software to solve complex industry
                   problems.
             </p>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10 max-w-6xl mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
 
-                  <ServicesCard :icon="DraftingCompassIcon" icon-class="font-bold"
-                    header-text="Custom Development & Web Portals" :list="[
+                  <ServicesCard :icon="DraftingCompassIcon" header-text="Custom Development & Web Portals" :list="[
                         'Website Design & Development',
                         'Mobile App Development (iOS/Android)',
                         'E-commerce Solutions',
@@ -112,7 +110,7 @@
                     text="We are Eaglesoft Ghana, building solutions localized for regulatory compliance, currency (GHS), and the unique operational context of Ghana." />
 
                   <SimpleCard v-fade-in :icon="CpuIcon" header-text="Modern Technology"
-                    text="Built with the latest stack (Nuxt.js, Vue.js, Tailwind css, Laravel), ensuring high performance, speed, and reliability." />
+                    text="Built with the latest stack (Nuxt.js, Vue.js, AdonisJS, Tailwind css, Laravel), ensuring high performance, speed, and reliability." />
 
                   <SimpleCard v-fade-in :icon="HandshakeIcon" header-text="Dedicated Support"
                     text=" We offer dedicated on-the-ground support, implementation assistance, and training across the country." />
@@ -120,7 +118,7 @@
       </ESSection>
 
       <ESSection>
-            <section class="mt-20 py-12 text-center">
+            <section class="py-12 text-center">
                   <h2 v-fade-in class="text-2xl lg:text-3xl font-extrabold dark:text-white mb-4">
                         Ready to Digitalize with the Right Partner?
                   </h2>

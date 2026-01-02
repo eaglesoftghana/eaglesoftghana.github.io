@@ -13,7 +13,7 @@
             },
             ogUrl: constants.APP_URL,
             ogType: 'website'
-      })
+      });
 </script>
 
 <template>
@@ -21,7 +21,7 @@
             <div class="mx-auto max-w-2xl py-8 sm:py-16 lg:py-32 overflow-hidden">
                   <div v-fade-in class="text-center">
                         <h1
-                          class="text-5xl font-semibold tracking-tight text-balance dark:text-white text-global sm:text-7xl">
+                          class="text-5xl font-semibold tracking-tight text-balance text-global sm:text-7xl">
                               eaglesoft ghana
                         </h1>
                         <p class="mt-8 text-lg font-medium text-pretty dark:text-gray-400 sm:text-xl/8">
@@ -61,7 +61,7 @@
                           text="An all-in-one smart school management system" :icon="CrownIcon"
                           href="//eschoolghana.com" />
 
-                        <CardLinkWithIcon header-text="eagle terminal report manager"
+                        <CardLinkWithIcon header-text="eTerminal report manager"
                           text="The smart way of generating custom terminal report cards for students" :icon="CrownIcon"
                           href="//terminal-report.eschoolghana.com" />
 
@@ -89,7 +89,7 @@
                         <h6 class="text-center capitalize text-2xl font-semibold dark:text-white">
                               why eaglesoft ghana matters?
                         </h6>
-                        <p class="text-center text-lg/loose py-4 font-semibold text-global">
+                        <p class="text-center text-lg/loose py-4 font-semibold text-global-50">
                               Excellence • Local • Secure
                         </p>
                         <p class="text-center text-lg pb-12">
@@ -119,22 +119,21 @@
                   </div>
             </div>
       </div>
-      <div class="relative py-8 overflow-hidden @container">
-            <ESSection>
-                  <div v-fade-in class="py-4 md:py-8">
-                        <h6 class="text-center capitalize text-2xl font-semibold dark:text-white">
-                              what our clients say </h6>
-                  </div>
-                  <div v-fade-in
-                    class="flex flex-row overflow-x-auto gap-x-4 space-x-4 scroll-smooth scrollbar-none bg-body py-4! rounded-md">
-                        <TestimonialCard />
-                        <TestimonialCard />
-                        <TestimonialCard />
-                        <TestimonialCard />
-                        <TestimonialCard />
-                  </div>
-            </ESSection>
-      </div>
+      <ESSection class="@container">
+            <div v-fade-in class="py-4 md:py-8">
+                  <h6 class="text-center capitalize text-2xl font-semibold dark:text-white">
+                        what our clients say
+                  </h6>
+            </div>
+            <div v-fade-in
+              class="relative flex flex-row overflow-x-auto gap-x-4 space-x-4 scroll-smooth scrollbar-none py-4! rounded-md">
+                  <TestimonialCard />
+                  <TestimonialCard />
+                  <TestimonialCard />
+                  <TestimonialCard />
+                  <TestimonialCard />
+            </div>
+      </ESSection>
 </template>
 
 <style scoped></style>

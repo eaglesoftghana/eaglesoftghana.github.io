@@ -24,10 +24,10 @@
                   <span v-else class="flex basis-full items-center justify-center">
                         <component :is="props.icon" class="block size-14 text-center mb-3 dark:text-white" />
                   </span>
-                  <h3 class="text-xl font-semibold mb-2 capitalize dark:text-white">
+                  <h3 class="text-md font-semibold mb-2 capitalize dark:text-white">
                         {{ props.headerText }}
                   </h3>
-                  <p class="first-letter:capitalize text-sm">
+                  <p class="first-letter:capitalize">
                         {{ props.text }}
                   </p>
             </div>

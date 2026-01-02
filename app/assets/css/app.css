@@ -69,6 +69,7 @@ html > body > #__nuxt {
   --color-text: var(--text);
   --default-font-family: "Open Sans", "sans-serif";
   --color-global: oklch(45.392% 0.11464 153.948);
+  --color-global-50: oklab(61.605% -0.14087 0.07085);
 }
 
 .fade-enter-active,

@@ -1,5 +1,5 @@
 <script lang="ts" setup>
-      import type { LucideIcon } from 'lucide-vue-next';
+      import { CheckCircle2Icon, type LucideIcon } from 'lucide-vue-next';
       import type { StyleValue } from 'vue';
 
       interface Props {
@@ -17,17 +17,20 @@
 <template>
       <div
         class="overflow-hidden relative backdrop-blur-2xl dark:backdrop-opacity-50 md:my-16 border rounded-2xl bg-slate-100/50 border-slate-300/80 dark:border-slate-500/20 dark:bg-slate-800/80">
-            <div class="relative min-w-xs w-full p-6">
-                  <div class="text-global flex flex-row gap-4 items-center justify-start">
+            <div class="relative min-w-xs w-full p-4">
+                  <div class="text-global flex flex-row gap-4 items-center justify-start py-4">
                         <component :is="props.icon"
-                          :class="[props.iconClass, 'size-12 text-center mb-3 dark:text-white']" />
-                        <h3 class="text-xl font-semibold mb-2 capitalize dark:text-white">
+                          :class="[props.iconClass, 'size-6 text-center mb-3 dark:text-white']" />
+                        <h3 class="text-md font-semibold tracking-wide mb-2 capitalize dark:text-white">
                               {{ props.headerText }}
                         </h3>
                   </div>
-                  <ul role="list" class="space-y-2">
+                  <ul role="list" class="space-y-2.5">
                         <li v-for="item in props.list" :key="item">
-                              {{ item }}
+                              <div class="flex items-start">
+                                    <check-circle2-icon :stroke-width="3" class="h-4 w-4 text-global-50 mt-1 mr-2"/>
+                                    {{ item }}
+                              </div>
                         </li>
                   </ul>
             </div>

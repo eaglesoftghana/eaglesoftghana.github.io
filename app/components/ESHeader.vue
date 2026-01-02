@@ -9,7 +9,6 @@
   const { theme } = useTheme();
 
   const fillColor = computed(() => theme.value === 'dark' ? 'white' : '#006837')
-  const navBgColor = computed(() => theme.value === 'dark' ? '' : 'bg-slate-300/40')
 
   const isSideNavOpen = ref<boolean>(false);
 
@@ -36,7 +35,7 @@
 
 <template>
 
-  <header class="sticky top-0 z-50 shadow-md backdrop-blur-lg bg-body" :class="navBgColor">
+  <header class="sticky top-0 z-50 shadow backdrop-blur-lg bg-body">
     <nav aria-label="Global" class="flex items-center justify-between p-3 lg:px-8 mx-auto max-w-7xl">
       <div class="flex lg:flex-1">
         <NuxtLink :to="{ name: 'index' }" active-class=" " exact-active-class=" " class="-m-1.5 p-1.5">
@@ -59,6 +58,11 @@
           exact-active-class="dark:text-zinc-100 text-global"
           class="text-sm font-semibold dark:text-slate-400 hover:text-zinc-700 dark:hover:text-body">
           Home
+        </NuxtLink>
+        <NuxtLink :href="{ name: 'services' }" active-class="dark:text-zinc-100 text-global"
+          exact-active-class="dark:text-zinc-100 text-global"
+          class="text-sm font-semibold dark:text-slate-400 hover:text-zinc-700 dark:hover:text-body">
+          Services
         </NuxtLink>
         <div class="relative" @mouseover="isProductListShown = true" @mouseleave="isProductListShown = false">
           <NuxtLink :to="{ name: 'products' }" active-class="dark:text-zinc-100 text-global"
@@ -85,11 +89,6 @@
             </div>
           </Transition>
         </div>
-        <NuxtLink :href="{ name: 'services' }" active-class="dark:text-zinc-100 text-global"
-          exact-active-class="dark:text-zinc-100 text-global"
-          class="text-sm font-semibold dark:text-slate-400 hover:text-zinc-700 dark:hover:text-body">
-          Services
-        </NuxtLink>
         <NuxtLink :href="{ name: 'about' }" active-class="dark:text-zinc-100 text-global"
           exact-active-class="dark:text-zinc-100 text-global"
           class="text-sm font-semibold dark:text-slate-400 hover:text-zinc-700 dark:hover:text-body">
@@ -114,7 +113,7 @@
           <div class="relative w-full h-full overflow-hidden bg-body p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div class="flex items-center justify-between">
               <NuxtLink :to="{ name: 'index' }" exact-active-class=" " active-class=" " class="-m-1.5 p-1.5">
-                <span class="sr-only">Your</span>
+                <span class="sr-only">Eaglesoft Ghana</span>
                 <Logo class="h-8" :fill-color="fillColor" />
               </NuxtLink>
               <button type="button" @click="toggleSideNav" class="-m-2.5 rounded-md p-2.5">
@@ -132,6 +131,11 @@
                     exact-active-class="dark:text-zinc-100 text-global"
                     class="text-sm block px-3 -mx-3 py-2 font-semibold dark:text-slate-400 hover:text-zinc-700 dark:hover:text-body">
                     Home
+                  </NuxtLink>
+                  <NuxtLink :href="{ name: 'services' }" active-class="dark:text-zinc-100 text-global"
+                    exact-active-class="dark:text-zinc-100 text-global"
+                    class="text-sm block  px-3 -mx-3 py-2 font-semibold dark:text-slate-400 hover:text-zinc-700 dark:hover:text-body">
+                    Services
                   </NuxtLink>
                   <div class="relative block" @mouseover="isProductListShown = true"
                     @mouseleave="isProductListShown = false">
@@ -162,11 +166,6 @@
                       </div>
                     </Transition>
                   </div>
-                  <NuxtLink :href="{ name: 'services' }" active-class="dark:text-zinc-100 text-global"
-                    exact-active-class="dark:text-zinc-100 text-global"
-                    class="text-sm block  px-3 -mx-3 py-2 font-semibold dark:text-slate-400 hover:text-zinc-700 dark:hover:text-body">
-                    Services
-                  </NuxtLink>
                   <NuxtLink :href="{ name: 'about' }" active-class="dark:text-zinc-100 text-global"
                     exact-active-class="dark:text-zinc-100 text-global"
                     class="text-sm block  px-3 -mx-3 py-2 font-semibold dark:text-slate-400 hover:text-zinc-700 dark:hover:text-body">
