@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+
+      import { LightbulbIcon } from 'lucide-vue-next';
       useSeoMeta({
             title: 'about • eaglesoft ghana'.toString().toUpperCase(),
             ogTitle: 'about • eaglesoft ghana'.toString().toUpperCase(),
@@ -7,8 +9,11 @@
             ogImage: '/logo.svg',
             twitterCard: 'summary_large_image',
       });
-
-      import { LightbulbIcon } from 'lucide-vue-next';
+      // useHead({
+      //       link: [
+      //             { rel: 'canonical', href: constants.APP_URL + '/contact' }
+      //       ]
+      // });
 </script>
 
 <template>

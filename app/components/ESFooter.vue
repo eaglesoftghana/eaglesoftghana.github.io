@@ -4,7 +4,7 @@
 
       const { theme } = useTheme();
 
-      const fillColor = computed(() => theme.value === 'dark' ? 'white' : '#006837')
+      // const fillColor = computed(() => theme.value === 'dark' ? 'var(--color-global-50)' : '#006837')
 
 </script>
 
@@ -12,20 +12,20 @@
       <div class="@container bg-body relative w-full py-6">
             <footer class="px-6 md:px-8 lg:px-10 xl:px-12 mx-auto max-w-7xl space-y-4 md:space-y-8 xl:space-y-12 z-1">
                   <div
-                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-4 sm:gap-6 lg:gap-8 xl:gap-12">
+                    class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-2 sm:gap-4 lg:gap-6 xl:gap-10">
                         <div
                           class="sm:col-span-2 md:col-span-4 lg:col-span-2 flex flex-col items-start gap-4 mb-6 md:mb-0">
                               <div class="flex flex-row items-center gap-2">
                                     <Logo
                                       class="h-12 w-auto p-2 rounded-md backdrop-blur-xs border border-slate-500/20 dark:bg-slate-400/10"
-                                      :fill-color="fillColor" />
+                                      fill-color="var(--color-global-50)" />
                                     <span class="capitalize text-nowrap">
                                           eaglesoft ghana
                                     </span>
                               </div>
                               <p>
-                                    We are committed to developing and delivering specialized software solutions that
-                                    address the unique challenges of the Ghanaian market.
+                                    We empowering businesses and institutions with robust, user-friendly, and
+                                    locally-tailored software systems that drive efficiency and growth.
                               </p>
                               <div class="flex items-center gap-4">
                                     <NuxtLink :external="true" target="_blank" title="Facebook"
@@ -56,25 +56,29 @@
                               </h3>
                               <ul role="list" class="space-y-4 mt-3 sm:mt-5.5 capitalize">
                                     <li>
-                                          <NuxtLink external class="dark:hover:text-white hover:text-slate-600"
+                                          <NuxtLink active-class=" " exact-active-class=" " external
+                                            class="dark:hover:text-white hover:text-slate-600"
                                             title="Eagle School Manager" target="_blank" href="//eschoolghana.com">
                                                 school management system
                                           </NuxtLink>
                                     </li>
                                     <li>
-                                          <NuxtLink external class="dark:hover:text-white hover:text-slate-600"
-                                            title="Vote 360 Online" target="_blank" href="//vote360online.com">
+                                          <NuxtLink active-class=" " exact-active-class=" " external
+                                            class="dark:hover:text-white hover:text-slate-600" title="Vote 360 Online"
+                                            target="_blank" href="//vote360online.com">
                                                 secure online voting platform
                                           </NuxtLink>
                                     </li>
                                     <li>
-                                          <NuxtLink external class="dark:hover:text-white hover:text-slate-600"
+                                          <NuxtLink active-class=" " exact-active-class=" " external
+                                            class="dark:hover:text-white hover:text-slate-600"
                                             :to="{ name: 'products', hash: '#cms' }">
                                                 clinic management system
                                           </NuxtLink>
                                     </li>
                                     <li>
-                                          <NuxtLink external class="dark:hover:text-white hover:text-slate-600"
+                                          <NuxtLink active-class=" " exact-active-class=" " external
+                                            class="dark:hover:text-white hover:text-slate-600"
                                             title="Eagle Church Suite" target="_blank" href="//echurchsuite.com">
                                                 church ERP system
                                           </NuxtLink>
@@ -87,22 +91,30 @@
                               </h3>
                               <ul role="list" class="space-y-4 mt-3 sm:mt-5.5 capitalize">
                                     <li>
-                                          <NuxtLink class="dark:hover:text-white" :to="{ name: 'about' }">
+                                          <NuxtLink active-class="dark:text-global-50! text-global-50"
+                                            exact-active-class="dark:text-global-50! text-global-50"
+                                            class="dark:hover:text-white" :to="{ name: 'about' }">
                                                 about
                                           </NuxtLink>
                                     </li>
                                     <li>
-                                          <NuxtLink class="dark:hover:text-white" :to="{ name: 'contact' }">
+                                          <NuxtLink active-class="dark:text-global-50! text-global-50"
+                                            exact-active-class="dark:text-global-50! text-global-50"
+                                            class="dark:hover:text-white" :to="{ name: 'contact' }">
                                                 contact
                                           </NuxtLink>
                                     </li>
                                     <li>
-                                          <NuxtLink class="dark:hover:text-white" :to="{ name: 'products' }">
+                                          <NuxtLink active-class="dark:text-global-50! text-global-50"
+                                            exact-active-class="dark:text-global-50! text-global-50"
+                                            class="dark:hover:text-white" :to="{ name: 'products' }">
                                                 products
                                           </NuxtLink>
                                     </li>
                                     <li>
-                                          <NuxtLink class="dark:hover:text-white" :to="{ name: 'services' }">
+                                          <NuxtLink active-class="dark:text-global-50! text-global-50"
+                                            exact-active-class="dark:text-global-50! text-global-50"
+                                            class="dark:hover:text-white" :to="{ name: 'services' }">
                                                 services
                                           </NuxtLink>
                                     </li>

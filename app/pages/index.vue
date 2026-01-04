@@ -5,14 +5,19 @@
       useSeoMeta({
             title: 'eaglesoft ghana'.toString().toUpperCase(),
             ogTitle: 'eaglesoft ghana'.toString().toUpperCase(),
-            description: 'Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
-            ogDescription: 'Eaglesoft Ghana is a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
+            description: 'Eaglesoft Ghana. We are a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
+            ogDescription: 'Eaglesoft Ghana. We are a forward-thinking software development firm committed to developing and delivering specialized software solutions that address the unique challenges of the Ghanaian market.',
             twitterCard: 'summary_large_image',
             ogImage: {
-                  url: constants.APP_URL + '/apple-touch-icon.png'
+                  url: constants.APP_URL + '/icon-192.png'
             },
             ogUrl: constants.APP_URL,
             ogType: 'website'
+      });
+      useHead({
+            link: [
+                  { rel: 'canonical', href: constants.APP_URL }
+            ]
       });
 </script>
 
@@ -20,13 +25,12 @@
       <ESSection>
             <div class="mx-auto max-w-2xl py-8 sm:py-16 lg:py-32 overflow-hidden">
                   <div v-fade-in class="text-center">
-                        <h1
-                          class="text-5xl font-semibold tracking-tight text-balance text-global sm:text-7xl">
+                        <h1 class="text-5xl font-semibold tracking-tight text-balance text-global sm:text-7xl">
                               eaglesoft ghana
                         </h1>
                         <p class="mt-8 text-lg font-medium text-pretty dark:text-gray-400 sm:text-xl/8">
-                              Empowering businesses and institutions with robust, user-friendly, and
-                              locally-tailored software systems that drive efficiency and growth.
+                              We are committed to developing and delivering specialized software solutions that
+                              address the unique challenges of the Ghanaian market.
                         </p>
                         <div class="mt-10 flex items-center justify-center gap-x-6">
                               <NuxtLink

@@ -1,4 +1,5 @@
 import tailwindcss from "@tailwindcss/vite";
+import tailwindcssMangle from "unplugin-tailwindcss-mangle/vite";
 
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
@@ -7,10 +8,30 @@ export default defineNuxtConfig({
   // modules: ["@nuxt/fonts"],
   css: ["./app/assets/css/app.css"],
   vite: {
-    plugins: [tailwindcss()],
+    plugins: [
+      tailwindcss(),
+      tailwindcssMangle({
+        generator: {
+          classPrefix: "es-",
+        },
+        preserve: {
+          classes: [],
+        },
+        sources: {
+          include: [
+            "**/*.vue",
+            "**/*.ts",
+            "**/*.js",
+            "**/*.jsx",
+            "**/*.tsx",
+            "**/*.html",
+          ],
+        },
+      }),
+    ],
   },
   app: {
-    baseURL: '/',
+    baseURL: "/",
     head: {
       title: "eaglesoft ghana",
       htmlAttrs: {

@@ -9,19 +9,24 @@
             ogDescription: 'We build specialized, robust, and localized software (SaaS) tailored to meet the unique operational needs of the Ghanaian market. We are not just software architects; we provide comprehensive IT solutions that businesses need, from custom web apps and mobile development to computer networking, system installation, and digital marketing.',
             twitterCard: 'summary_large_image',
             ogImage: {
-                  url: constants.APP_URL + '/apple-touch-icon.png'
+                  url: constants.APP_URL + '/icon-192.png'
             },
             ogUrl: constants.APP_URL + '/services',
             ogType: 'website'
+      });
+      useHead({
+            link: [
+                  { rel: 'canonical', href: constants.APP_URL + '/services' }
+            ]
       });
 </script>
 
 <template>
       <ESSection>
             <div class="mx-auto max-w-2xl py-8 sm:pt-16 lg:pt-32 overflow-hidden">
-                  <h2 v-fade-in class="text-2xl md:text-3xl font-bold text-global text-center">
+                  <h1 v-fade-in class="text-2xl md:text-3xl font-bold text-global text-center">
                         Empowering Ghanaian Businesses and Institutions with Intelligent Software Solutions.
-                  </h2>
+                  </h1>
             </div>
       </ESSection>
       <div

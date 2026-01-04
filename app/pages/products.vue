@@ -8,21 +8,26 @@
             ogDescription: 'Innovative SaaS Products Built for the Ghanaian Market. Explore our suite of specialized software applications designed for high performance, localized relevance, and unparalleled user experience across healthcare, education, and digital governance.',
             twitterCard: 'summary_large_image',
             ogImage: {
-                  url: constants.APP_URL + '/apple-touch-icon.png'
+                  url: constants.APP_URL + '/icon-192.png'
             },
             ogUrl: constants.APP_URL + '/products',
             ogType: 'website'
       });
+      useHead({
+            link: [
+                  { rel: 'canonical', href: constants.APP_URL + '/products' }
+            ]
+      });
 </script>
 
 <template>
-      <ESSection>
-            <div class="mx-auto max-w-2xl py-8 sm:pt-16 lg:pt-32 overflow-hidden">
-                  <h2 v-fade-in class="text-2xl md:text-3xl font-bold text-global text-center">
-                        Innovative SaaS Products Built for the Ghanaian Market.
-                  </h2>
-            </div>
-      </ESSection>
+            <ESSection>
+                  <div class="mx-auto max-w-2xl py-8 sm:pt-16 lg:pt-32 overflow-hidden">
+                        <h1 v-fade-in class="text-2xl md:text-3xl font-bold text-global text-center">
+                              Innovative SaaS Products Built for the Ghanaian Market.
+                        </h1>
+                  </div>
+            </ESSection>
       <div
         class="mx-auto w-full overflow-hidden backdrop-blur-2xl backdrop-opacity-30 my-8 py-8 md:my-16 border-y bg-slate-200/90 border-slate-300/40 dark:border-slate-500/20 dark:bg-slate-500/10 rounded-none">
             <ESSection>
